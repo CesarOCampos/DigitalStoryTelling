@@ -8,9 +8,11 @@
     - Use this command to install Nodemon: `npm install -g nodemon`
 
 # Run the server
-  - To run the website, do `nodemon app.js` in the terminal. Express will serve `App.js` on localhost.
+  - To run the website, do `nodemon app.js` in the terminal. Express will serve `App.js` on localhost. 
   - Go to URL `localhost:5000` on your browser. 5000 is the default port to run the website locally.
   
-  - You should see some type of content, I will update this part after a index route is created.
+  - You should see 'Hello World!' this means your project is set up! 
   
-  
+# Project Reference
+  - This is the video I used to set up this project. It focuses on login, registration, sessions, templating.  
+    - https://www.youtube.com/watch?v=6FOq4cUdH8k
