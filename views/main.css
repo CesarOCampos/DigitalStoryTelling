@@ -1,0 +1,42 @@
+.pushdown{
+	margin-top: 10px;
+}
+
+nav a{
+	margin-top: 4px ;
+	margin-bottom: 4px;
+}
+
+
+.navr{
+	float: right;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-right{
+	float: right;
+}
+
+.color {
+	height: 100%;
+	background-color: #6F8AB7;
+}
+
+.hero{
+	background-color: #615D6C;
+	margin-bottom: 10px;
+}
+
+.se{
+	background-color: #D7D9CE;
+}
+
+.containere{
+	padding-left: 25px;
+	padding-right: 25px;
+	height: 100%;
+	padding-bottom: 10px;
+}
