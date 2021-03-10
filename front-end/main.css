@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+.float-right{
+	float:right;
+}
+
+nav a{
+	font-weight: bold;
+}
+
+nav{
+	background: #EF767A;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+body{
+	background: #D3D5D7;
+	/*color: white;*/
+}
+
+
+.nav-button{
+	background: #62BBC1;
+	font-size: 16px;
+	border: solid;
+	border-color: #1D3557;
+	border-width: 2px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 25px;
+	font-family: Inter;
+}
+
+
+
+/**/
+.top-margin{
+	margin-top: 100px;
+}
+/**/
+
+/* */
+
+.segmentcolor{
+	background-color: #EF767A;
+}
+
+.segmentred{
+	background-color: #EF767A;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.segment{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	width: 100%;
+}
+
+.main-heading{
+	font-size: 90px;
+	font-family: Inter;
+	margin-top: 100px;
+}
+
+.get-started{
+	background: #6D9DC5;
+	font-size: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 25px;
+	padding-bottom: 40px;
+	font-family: Inter;
+}
+
+ul{
+	list-style: none;
+}
+
+.align-list{
+	padding-right: 40px;
+}
+
+.flex{
+	  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
