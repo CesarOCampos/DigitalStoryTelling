@@ -9,19 +9,19 @@ nav a{
 }
 
 nav{
-	background: #EF767A;
+	background: #5E7CE2;
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
 
 body{
 	background: #D3D5D7;
-	/*color: white;*/
+	height: 100%;
+	/*margin: 0;*/
 }
 
-
 .nav-button{
-	background: #62BBC1;
+	background: #92B4F4;
 	font-size: 16px;
 	border: solid;
 	border-color: #1D3557;
@@ -43,11 +43,12 @@ body{
 /* */
 
 .segmentcolor{
-	background-color: #EF767A;
+	background-color: #5E7CE2;
 }
 
+
 .segmentred{
-	background-color: #EF767A;
+	background-color: #5E7CE2;
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
@@ -82,8 +83,34 @@ ul{
 	padding-right: 40px;
 }
 
-.flex{
-	  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+.inter{
+	font-family: Inter;
+}
+
+.login-label{
+	font-size: 25px;
+}
+
+.login-button{
+	background: #B8BACF;
+	font-size: 16px;
+	border: none;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 25px;
+	font-family: Inter;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.flexbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login{
+	width: 400px;
 }
