@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Page Title -->
-    <title>turretcss</title>
-
-    <!-- turretcss CSS -->
-
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/turretcss/dist/turretcss.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="login.css">
-  </head>
-  <body>
+<body>
     <nav class="nav-inline position-right box-shadow-l">
   <ul>
     <li>
@@ -62,19 +45,27 @@
   </thead>
   <tbody>
     <tr>
-      <td>Egestas Ipsum Nibh</td>
-      <td>Magna Nullam</td>
-      <td>Consectetur Euismod</td>
+      <% if(stat) { %>
+      <% stat.forEach(function(item) { %>
+        <td> <%= item.name %> </td>
+        <td> <%= item.email %> </td>
+      <% }) } %>
     </tr>
     <tr>
-      <td>Egestas Ipsum Nibh</td>
-      <td>Magna Nullam</td>
-      <td>Consectetur Euismod</td>
+      <!-- <% if(stat) { %>
+      <% stat.forEach(function(item) { %>
+        <td> <%= item.email %> </td>
+      <% }) } %> -->
     </tr>
     <tr>
-      <td>Egestas Ipsum Nibh</td>
-      <td>Magna Nullam</td>
-      <td>Consectetur Euismod</td>
+      <% if(stat) { %>
+      <% stat.forEach(function(item) { %>
+        <% if(item.videos.length == 0) { %>
+        <td> Videos Not Watched Yet </td>
+        <% } else { %>
+          <td> <%= item.videos[0].video1 %> </td>
+        <% } %>
+      <% }) } %>
     </tr>
   </tbody>
 </table>
@@ -117,4 +108,3 @@
 
 
   </body>
-</html>

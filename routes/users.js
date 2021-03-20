@@ -18,6 +18,7 @@ router.get('/register', (req,res) => {
 	res.render('register')
 })
 
+
 router.post('/register', (req,res) => {
 	console.log(req.body)
 	const {name, email, password, password2} = req.body
@@ -94,8 +95,8 @@ router.post('/register', (req,res) => {
 
 router.post('/login', (req,res, next) => {
 	passport.authenticate('local', {
-		successRedirect: '/homepage',
-		failureRedirect: '/users/login',
+		successRedirect: '/profile',
+		failureRedirect: '/users/login', //Add a redirect message here
 	})(req, res, next)
 })
 

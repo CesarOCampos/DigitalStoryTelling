@@ -3,6 +3,7 @@ const expressLayouts = require('express-ejs-layouts')
 const mongoose = require('mongoose')
 const passport = require('passport')
 const session = require('express-session')
+const bodyParser = require('body-parser')
 
 require('./config/passport')(passport)
 
@@ -17,6 +18,8 @@ app.use(expressLayouts)
 app.set('view engine', 'ejs')
 
 app.use(express.urlencoded({ extended: false}))
+app.use(bodyParser.json())
+
 
 app.use(
   session({
@@ -37,8 +40,15 @@ app.listen(PORT, () => {
 	console.log("Server started")
 })
 
+
+
 // CSS
 app.use('/', express.static('views'))
+
+// Have to include static files for each unique route
+app.use('/users/login', express.static('views'))
+app.use('/users/register', express.static('views'))
+
 
 app.use('/', require('./routes/index'))
 
