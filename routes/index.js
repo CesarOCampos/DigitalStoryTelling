@@ -35,14 +35,20 @@ router.get('/videos/:videoname', ensureAuthenticated, (req,res) => {
 
 	console.log(vidname)
 	console.log(req.user)
-	console.log("The videoname is : " + req.user.videos[0][String(vidname)])
+	// console.log("The videoname is : " + req.user.videos[0][String(vidname)])
 	let vidstart = 0;
-	if(req.user.videos[0][vidname]){
-		let vidarry = String(req.user.videos[0][vidname])
-		vidstart = vidarry.split(".")[0]
+
+	if(req.user.videos.length > 0){
+			if(req.user.videos[0][vidname]){
+				let vidarry = String(req.user.videos[0][vidname])
+				vidstart = vidarry.split(".")[0]
+			}else{
+				vidstart = 0;
+			}
 	}else{
 		vidstart = 0;
 	}
+
 	console.log(vidstart)
 
 	if(vidname == "video1"){

@@ -47,27 +47,17 @@
     <tr>
       <% if(stat) { %>
       <% stat.forEach(function(item) { %>
+      <tr>
         <td> <%= item.name %> </td>
         <td> <%= item.email %> </td>
-      <% }) } %>
-    </tr>
-    <tr>
-      <!-- <% if(stat) { %>
-      <% stat.forEach(function(item) { %>
-        <td> <%= item.email %> </td>
-      <% }) } %> -->
-    </tr>
-    <tr>
-      <% if(stat) { %>
-      <% stat.forEach(function(item) { %>
         <% if(item.videos.length == 0) { %>
         <td> Videos Not Watched Yet </td>
         <% } else { %>
           <td> <%= item.videos[0].video1 %> </td>
+        </tr>
         <% } %>
       <% }) } %>
-    </tr>
-  </tbody>
+ </tbody>
 </table>
         </div>  
 
