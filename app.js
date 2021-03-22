@@ -48,6 +48,7 @@ app.use('/', express.static('views'))
 // Have to include static files for each unique route
 app.use('/users/login', express.static('views'))
 app.use('/users/register', express.static('views'))
+app.use('/videos', express.static('views'))
 
 
 app.use('/', require('./routes/index'))
