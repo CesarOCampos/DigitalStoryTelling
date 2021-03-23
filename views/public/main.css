@@ -46,11 +46,16 @@ body{
 	background-color: #5E7CE2;
 }
 
-
 .segmentred{
 	background-color: #5E7CE2;
 	padding-top: 100px;
 	padding-bottom: 100px;
+}
+
+.video-info{
+	background-color: #5E7CE2;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .segment{
@@ -132,6 +137,14 @@ ul{
   align-content: space-between;
 }
 
+.flex-cards-center{
+	 display: flex;
+  padding-left: 25px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .flex-center{
 	display: flex;
 	justify-content: center;
@@ -152,4 +165,18 @@ ul{
 
 .admin{
 	font-size: 20px;
+}
+
+.main-h{
+	font-size: 70px;
+}
+
+.script-div{
+	height: 200px;
+	overflow-y: scroll;
+}
+
+.video-info-script{
+	background: #FF6663;
+	color: white;
 }

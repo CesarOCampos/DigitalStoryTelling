@@ -59,7 +59,7 @@
   <div class="container">
 
     <div class="text-align-center">
-    <h2 class="display-title display-title-l margin-bottom-m">Digital Story Telling</h2>
+    <h2 class="display-title display-title-l margin-bottom-m">Python Programming</h2>
     <nav class="nav-inline">
       <li>
         <a href="">Contact</a>
@@ -75,10 +75,10 @@
       </li>
       <li>
         <a href="">Contribute</a>
-        <button type='submit' id="test"> save </button>
-        <div id="yplayer">
-        <!-- <iframe id="video" width="853" height="480" src="https://www.youtube.com/embed/xI9iGYhnELg?start=47&end=268;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-      </div>
+        <!-- <button type='submit' id="test"> save </button> -->
+        <!-- <div id="yplayer">
+        <iframe id="video" width="853" height="480" src="https://www.youtube.com/embed/xI9iGYhnELg?start=47&end=268;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div> -->
       </li>
     </nav>
   </div>
@@ -89,30 +89,30 @@
 
 <script type="text/javascript">
 
-let vid = document.querySelector("#video")
-// id = vid.src.split("embed/")[1]
-id = vid.src.split("v/")[1].split("&")[0]
-console.log(id)
+// let vid = document.querySelector("#video")
+// // id = vid.src.split("embed/")[1]
+// id = vid.src.split("v/")[1].split("&")[0]
+// console.log(id)
 
-let x = document.querySelector('#test')
-var tag = document.createElement('script');
+// let x = document.querySelector('#test')
+// var tag = document.createElement('script');
 
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+//       tag.src = "https://www.youtube.com/iframe_api";
+//       var firstScriptTag = document.getElementsByTagName('script')[0];
+//       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-      // 3. This function creates an <iframe> (and YouTube player)
-      //    after the API code downloads.
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('yplayer', {
-          videoId: id,
-        });
-      }
+//       // 3. This function creates an <iframe> (and YouTube player)
+//       //    after the API code downloads.
+//       var player;
+//       function onYouTubeIframeAPIReady() {
+//         player = new YT.Player('yplayer', {
+//           videoId: id,
+//         });
+//       }
 
-x.addEventListener('click', (e) => {
-  console.log(player.playerInfo.currentTime)
-})
+// x.addEventListener('click', (e) => {
+//   console.log(player.playerInfo.currentTime)
+// })
 
 
 // let x = document.querySelector("#test")
