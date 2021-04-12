@@ -22,7 +22,7 @@ nav a{
 }
 
 nav{
-	background: #c19277;
+	background: #18747c;
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
@@ -34,7 +34,7 @@ body{
 }
 
 .nav-button{
-	background: #62959c;
+	background: #cda053;
 	font-size: 16px;
 	border: solid;
 	border-color: #1D3557;
@@ -57,17 +57,17 @@ body{
 /* */
 
 .segmentcolor{
-	background-color: #62959c;
+	background-color: #18747c;
 }
 
 .segmentred{
-	background-color: #62959c;
+	background-color: #18747c;
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
 
 .video-info{
-	background-color: #5E7CE2;
+	background-color: #18747c;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
@@ -91,7 +91,7 @@ body{
 }
 
 .get-started{
-	background: #62959c;
+	background: #cda053;
 	font-size: 20px;
 	padding-left: 40px;
 	padding-right: 40px;
@@ -193,4 +193,8 @@ ul{
 .video-info-script{
 	background: #FF6663;
 	color: white;
+}
+
+.card-color{
+	background: #a2caeb;
 }
