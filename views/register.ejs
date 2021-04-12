@@ -1,0 +1,92 @@
+ <nav class="nav-inline position-right box-shadow-l">
+  <ul>
+    <li>
+      <a href="/" class="button button-s nav-button box-shadow-l">Home</a>
+    </li>
+    <li class="float-right">
+      <a href="/users/login" class="button button-s nav-button box-shadow-l">Login</a>
+    </li>
+    <li class="float-right">
+      <a href="..." class="button button-s nav-button box-shadow-l">Tutorials</a>
+    </li>
+    <li class="float-right">
+      <a href="/users/register" class="button button-s nav-button box-shadow-l">Register</a>
+    </li>
+  </ul>
+</nav>
+
+  <main >
+
+    <div class="flexbox">
+      <div class="segment container margin-bottom-xl margin-top-xl margin-left-l">
+        <h1 class="main-heading">Register</h1>
+         <p class="lead lead-s margin-vertical-m max-width-s">Learn Programming.</p>
+        </div>
+
+
+        <div class="padding-m border-radius background-white margin-right-xl box-shadow-xl margin-top-xl margin-bottom-xl">
+          <h3 class="color-dark margin-top-m text-align-center login-label">Login</h3>
+            <div class="login">
+<%- include ("./partials/messages"); %>
+              <form action="/users/register" method="POST">
+  <p class="field">
+    <label class="inter login-label" for="form-simple-email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter Email" value="<%= typeof email != 'undefined' ? email : '' %>" />
+  </p>
+    <p class="field">
+    <label class="inter login-label" for="form-simple-email">Username</label>
+    <input type="name" id="name" name="name" placeholder="Enter Name" value="<%= typeof name != 'undefined' ? name : '' %>"/>
+  </p>
+  <p class="field">
+    <label class="inter login-label" for="form-simple-password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Enter Password" value="<%= typeof password != 'undefined' ? password : '' %>" />
+  </p>
+  <p class="field">
+    <label class="inter login-label" for="form-simple-password">Enter Password Again</label>
+    <input type="password" id="password2" name="password2" placeholder="Enter Password Again" value="<%= typeof password2 != 'undefined' ? password2 : '' %>" />
+  </p>
+  <p class="field">
+    <button type="submit" class="button login-button">Register</button>
+    <button type="reset" class="button nav-button login-button">Reset</button>
+    <a class="text-align-center margin-left-xl" href="login">Or Login</a>
+  </p>
+
+</form>
+
+
+            </div>
+
+        </div>
+
+      </div>
+
+
+
+  </main>
+
+  <footer class="footer padding-vertical-xl border-top border-color-primary-600 segmentcolor">
+  <div class="container">
+
+    <div class="text-align-center">
+    <h2 class="display-title display-title-l margin-bottom-m">Digital Story Telling</h2>
+    <nav class="nav-inline">
+      <li>
+        <a href="">Contact</a>
+      </li>
+      <li>
+        | 
+      </li>
+      <li>
+        <a href="">Mission</a>
+      </li>
+      <li>
+        | 
+      </li>
+      <li>
+        <a href="">Contribute</a>
+      </li>
+    </nav>
+  </div>
+
+  </div>
+</footer>
