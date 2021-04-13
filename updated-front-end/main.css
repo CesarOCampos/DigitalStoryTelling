@@ -11,6 +11,10 @@
   --eight: #a1b5c5;
   --ninth: #414474;
   --tenth: #bc7c9c;
+  --nav: #af2d2d;
+  --button: #d1cebd;
+  --body: #d1cebd;
+  --card: #f57b51;
 }
 
 .float-right{
@@ -22,19 +26,19 @@ nav a{
 }
 
 nav{
-	background: #18747c;
+	background: var(--nav);
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
-
+	
 body{
-	background: #e3d0b9;
+	background: var(--body);
 	height: 100%;
 	/*margin: 0;*/
 }
 
 .nav-button{
-	background: #cda053;
+	background: var(--button);
 	font-size: 16px;
 	border: solid;
 	border-color: #1D3557;
@@ -57,13 +61,13 @@ body{
 /* */
 
 .segmentcolor{
-	background-color: #18747c;
+	background-color: var(--nav);
 }
 
 .segmentred{
-	background-color: #18747c;
-	padding-top: 100px;
-	padding-bottom: 100px;
+	background-color: #ec4646;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .video-info{
@@ -73,7 +77,6 @@ body{
 }
 
 .segment{
-	padding-top: 100px;
 	padding-bottom: 100px;
 	width: 100%;
 }
@@ -84,14 +87,18 @@ body{
 	margin-top: 100px;
 }
 
-.video-heading{
-		font-size: 90px;
-	font-family: Inter;
-
+.second-heading{
+	font-size: 90px;
 }
 
+.video-heading{
+		font-size: 70px;
+	font-family: Inter;
+	text-decoration: underline;
+	}
+
 .get-started{
-	background: #cda053;
+	background: #e7e7de;
 	font-size: 20px;
 	padding-left: 40px;
 	padding-right: 40px;
@@ -182,12 +189,14 @@ ul{
 }
 
 .main-h{
-	font-size: 70px;
+	font-size: 50px;
 }
 
 .script-div{
-	height: 200px;
+	height: 400px;
 	overflow-y: scroll;
+	padding: 10px;
+	font-size: 20px;
 }
 
 .video-info-script{
@@ -196,5 +205,84 @@ ul{
 }
 
 .card-color{
-	background: #a2caeb;
+	background: #6e7c7c;
+	border: solid 4px;
+	border-color: #383e56;
+}
+
+.button-color{
+	background: var(--button);
+}
+
+.card-button{
+	border: none;
+	background: #5aa897;
+	font-family: Inter;
+	font-size: 18px;
+}
+
+.card-s{
+	background: #5aa897;
+	font-family: Inter;
+	font-size: 18px;
+}
+
+hr{
+	border-radius: 20px;
+	background: #8ac4d0;
+	height: 2px;
+}
+
+.card-p{
+	border: solid;
+	border-color: #456268;
+	border-radius: 6px;
+	background: #79a3b1;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.card-padding{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.pr{
+	font-size: 30px;
+	text-align: justify;
+}
+
+.info{
+	width: 500px;
+	border: solid;
+	border-color: #194350;
+	background: #ff8882;
+	font-family: Inter;
+	font-size: 20px;
+}
+
+
+.video-flex{
+	display: flex;
+	align-items: stretch;
+}
+
+.video-exercise{
+	border: solid;
+	background: #ff8882;
+	width: 400px;
+}
+
+.video-e{
+	background: #ff8882;
+}
+
+.footer-heading{
+	font-size: 50px;
 }

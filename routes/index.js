@@ -52,7 +52,7 @@ router.get('/videos/:videoname', ensureAuthenticated, (req,res) => {
 	console.log(vidstart)
 
 	if(vidname == "video1"){
-		res.render('videopage', {heading: vidname, videolink: `https://www.youtube.com/embed/aHRXXdCpKBk`, time: vidstart})
+		res.render('videopage', {heading: vidname, videolink: `https://www.youtube.com/embed/f4q1RHCkYyg`, time: vidstart})
 	}else if(vidname == "video2"){
 		res.render('videopage', {heading: vidname, videolink: "https://www.youtube.com/embed/mTz0GXj8NN0", time: vidstart})
 	}else if(vidname == "video3"){

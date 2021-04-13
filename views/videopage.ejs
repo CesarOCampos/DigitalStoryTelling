@@ -19,33 +19,26 @@
 
   	<section>
       <div class="container margin-bottom-xl margin-top-xl margin-left-l">
-        <h1 class="video-heading" id="title"><%= heading %></h1>
+        <h1 class="video-heading hidden" id="title"><%= heading %></h1>
      </div> 
     </section>
 
     <section>
-      <div class="container video-info box-shadow-l border-radius margin-bottom-xl">
-        <h1 class="inter display-title-xl">Before you begin!</h1>
-        <div class="video-info-script padding-m border-radius box-shadow-l">
-        <p class="lead-m">Make sure you have the tools for programming in Python such as a text editor, the Python Interpreter.</p> 
-      </div>
-
-      </div>
+      <div class="container margin-bottom-xl margin-top-xl margin-left-l">
+        <h1 class="video-heading text-align-center"> Getting Started with Python</h1>
+     </div> 
     </section>
 
-    <section>
-      <div class="container video-info box-shadow-l border-radius margin-bottom-xl ">
-        <h1 class="inter display-title-xl text-align-center">Script</h1>
-        <div class="background-light border-radius padding-xl script-div">
-         <p class="lead-m">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, ex. At saepe molestiae eligendi, neque, dolore unde, doloribus illo quia nobis iusto deleniti dolorum nemo suscipit tempore vero error, impedit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, et, accusamus. Nam, numquam. Nihil quaerat delectus error, amet, magni sapiente cumque nam veniam, ab voluptatibus impedit, blanditiis obcaecati officiis dolorem!</p> 
-
-         <p>Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Exercitationem, at. Voluptatem magni a sed minima odio fugiat voluptatibus! Natus voluptatem dolorem laboriosam sed suscipit similique aliquam commodi doloremque vitae numquam.</p>  
-        </div>
-        
-
+     <section>
+      <div class="video-flex">
+      <div class="container info padding-m border-radius box-shadow-xl margin-bottom-xl">
+        <h1 class="text-align-center">What is an IDE?</h1>
+        <p>First if we want to write python code we have to find an IDE that you can run and write your python code in. There are many options such as VSCode, my favorite, but there are others such as Sublime, Atom, XCode for Mac, and many more. It is all based on personal preference. Since VSCode is my favorite, I will give you a brief tutorial there.</p>
       </div>
+    </div>
     </section>
 
+  
     <section>
         <div class="flex-center margin-bottom-m">
            
@@ -54,25 +47,51 @@
     </section>
 
     <section>
-      <div class="flex-center margin-bottom-xl">
+      <div class="video-flex vid-l margin-bottom-xl">
 
-        <div id="yplayer">
+        <div class="margin-left-xl" id="yplayer">
 <iframe class="box-shadow-l" id="video" width="853" height="480" src="<%= videolink %>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
 
-      </div>
+       <div class="margin-left-xl video-exercise border-radius">
+      <h1 class="text-align-center padding-bottom-s">Video Script</h1>
+      <div class="script-div">
+      <p><strong class="bold">Introduction:</strong></p>
 
+<p><strong class="bold">Professor</strong>: Next week we’ll be learning Python. I expect each one of you to do some research this weekend over Python and we will have a class discussion on Monday.</p>
+
+<p>Brenda comes home and starts researching Python becomes drowsy and falls asleep at her keyboard</p>
+
+<p><strong class="bold">Brenda</strong>: (yawns) I’m tired.
+Dream Begins!</p>
+
+<p>Brenda wakes up in her dream to see a python on her bed and freaks out!!</p>
+
+<p><strong class="bold">Python</strong>: “Python” What first comes to mind when you hear this word? The first thing you probably thought of was a snake, which is probably why you dreamt of me. Luckily, if you are not a huge fan of snakes, that is not the kind of python we are referring to. Unfortunately, I am a python and you will have to put up with me for the sake of learning python, as this is your dream and you assumed the kind of research  you will be doing is about snakes. However, you will be learning a high-level and general-purpose programming language, in which we will be learning the fundamentals of coding in python. 
+</p>
+</p>
+    </div>
+    </div>
+
+        </div>
+    </section>
+
+    <section>
       <div class="flex-center margin-bottom-xl padding-top-s padding-bottom-s background-light-900 border-radius" style="margin-right: 450px; margin-left: 450px">
         <button class="margin-right-m inter" type="submit" id="test"> Save Video </button>
-        <button class="margin-right-m inter" type="submit" id="resume"> Resume </button>
-
-        <button class="inter" type="submit" id="check"> CheckPoint </button>
       </div>
     </section>
 
     <section>
-      <div class="container video-info box-shadow-l border-radius margin-bottom-xl ">
-        <h1 class="inter display-title-xl text-align-center">Pyton Interpreter</h1>
+      <div class="container info padding-m border-radius box-shadow-xl margin-top-xl margin-bottom-xl">
+        <h1 class="text-align-center">Exercise: </h1>
+        <p class="text-align-center">Can you print “hello world” in Python?</p>
+      </div>
+    </section>
+
+    <section>
+        <h1 class="inter display-title-xl text-align-center">Python Interpreter</h1>
+        <div class="container margin-bottom-xl margin-top-xl">
         <iframe src="https://trinket.io/embed/python/6772cf21db" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
       </div>
     </section>
@@ -118,7 +137,7 @@ console.log(id)
 let check = document.querySelector("#check")
 
 
-let x = document.querySelector('#resume')
+// let x = document.querySelector('#resume')
 var tag = document.createElement('script');
 
       tag.src = "https://www.youtube.com/iframe_api";
