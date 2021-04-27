@@ -29,7 +29,7 @@
     <section>
       <div class="flex-cards">
 
-          <div class="padding-m flex flex-column justify-content-space-between border-radius background-white color-dark margin-right-m margin-bottom-xl vid-card">
+         <div class="padding-m flex flex-column justify-content-space-between border-radius background-white color-dark margin-right-m margin-bottom-xl vid-card">
           <div class="flex-auto">
             <h3 class="margin-top-m">Tutorial 1</h3>
             <a href="/videos/video1">Get Started with Python Programming</a>
@@ -65,6 +65,21 @@
           <p class="flex-none">
           </p>
         </div>
+
+      <% if(videos) { %>
+      <% videos.forEach(function(item) { %>
+     <div class="padding-m flex flex-column justify-content-space-between border-radius background-white color-dark margin-right-m margin-bottom-xl vid-card">
+              <div class="flex-auto">
+                <h3 class="margin-top-m"><%= item.name %></h3>
+                <a href="<%= item.link %>">Get Started with Python Programming</a>
+                <p class="color-grey">Learn Python Programming</p>
+              </div>
+              <p class="flex-none">
+              </p>
+            </div>
+      <% }) } %>
+
+         
 
        
 

@@ -25,7 +25,8 @@ router.get('/profile',ensureAuthenticated, (req, res) => {
 
 
 router.get('/videos',ensureAuthenticated, (req, res) => {
-	res.render('videos')
+	let allvideos = req.user.myvideos
+	res.render('videos', {videos: allvideos})
 })
 
 router.get('/videos/:videoname', ensureAuthenticated, (req,res) => {
@@ -51,15 +52,29 @@ router.get('/videos/:videoname', ensureAuthenticated, (req,res) => {
 
 	console.log(vidstart)
 
-	if(vidname == "video1"){
-		res.render('videopage', {heading: vidname, videolink: `https://www.youtube.com/embed/f4q1RHCkYyg`, time: vidstart})
-	}else if(vidname == "video2"){
-		res.render('videopage', {heading: vidname, videolink: "https://www.youtube.com/embed/mTz0GXj8NN0", time: vidstart})
-	}else if(vidname == "video3"){
-		res.render('videopage', {heading: vidname, videolink: "https://www.youtube.com/embed/6FOq4cUdH8k"})
-	}else if(vidname == "video4"){
-		res.render('videopage', {heading: vidname, videolink: "https://www.youtube.com/embed/6FOq4cUdH8k"})
-	}
+	// if(vidname == "video1"){
+	// 	res.render('videopage', {heading: vidname, videolink: `https://www.youtube.com/embed/f4q1RHCkYyg`, time: vidstart})
+	// }else if(vidname == "video2"){
+	// 	res.render('videopage', {heading: vidname, videolink: "https://www.youtube.com/embed/mTz0GXj8NN0", time: vidstart})
+	// }else if(vidname == "video3"){
+	// 	res.render('videopage', {heading: vidname, videolink: "https://www.youtube.com/embed/6FOq4cUdH8k"})
+	// }else if(vidname == "video4"){
+	// 	res.render('videopage', {heading: vidname, videolink: "https://www.youtube.com/embed/6FOq4cUdH8k"})
+	// }
+
+	// Vidname is the route
+
+	let allvideos = req.user.myvideos //User can see these videos, array with objects
+
+	let vidlink = ''
+
+	allvideos.forEach((data) => {
+		if(data.name == vidname){
+			vidlink = data.link
+		}
+	})
+
+	res.render('videopage', {heading: vidname, videolink: vidlink, time: vidstart}) //Embedded Link
 })
 
 router.post('/save', (req,res) => {
@@ -127,8 +142,8 @@ router.post('/save', (req,res) => {
 })
 
 
-router.get('/admin', (req,res) => {
-	// if(req.user.email == "test@gmail.com"){
+router.get('/admin', ensureAuthenticated, (req,res) => {
+	if(req.user.email == "admin@gmail.com"){
 
 			User.find({}, (err, result) => {
 		    if (err) {
@@ -137,8 +152,30 @@ router.get('/admin', (req,res) => {
 		     res.render('admin', {stat: result})
 		    }
 		  });
-	// }
+	}else{
+		res.redirect("/users/login")
+	}
 })
 
+router.post('/admin/new',  (req, res) => {
+
+	let uservids = req.user.myvideos //Get videolinks
+	let allvideos = [...uservids] //All videos
+
+
+	let newvideo = {
+		name: req.body.videoname,
+		link: req.body.videolink
+	}
+
+	allvideos.push(newvideo)
+
+	User.updateMany({}, {myvideos: allvideos}, (err, doc) => {
+		console.log("Updated Document")
+	})
+
+
+	res.redirect('/admin')
+})
 
 module.exports = router

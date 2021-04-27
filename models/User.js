@@ -7,6 +7,7 @@ const UserSchema = new mongoose.Schema({
 	username: {type: String},
 	videos: {type: Array},
 	isadmin: {type: Boolean},
+	myvideos: {type: Array},
 })
 
 const User = mongoose.model('User', UserSchema)
