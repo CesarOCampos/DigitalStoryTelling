@@ -7,10 +7,10 @@
       <a href="/users/logout" class="button button-s nav-button box-shadow-l">Logout</a>
     </li>
     <li class="float-right">
-      <a href="..." class="button button-s nav-button box-shadow-l">Tutorials</a>
+      <a href="/videos" class="button button-s nav-button box-shadow-l">Tutorials</a>
     </li>
     <li class="float-right">
-      <a href="..." class="button button-s nav-button box-shadow-l">Register</a>
+      <a href="/users/register" class="button button-s nav-button box-shadow-l">Register</a>
     </li>
   </ul>
 </nav>
@@ -31,9 +31,8 @@
 
          <div class="padding-m flex flex-column justify-content-space-between border-radius background-white color-dark margin-right-m margin-bottom-xl vid-card">
           <div class="flex-auto">
-            <h3 class="margin-top-m">Tutorial 1</h3>
-            <a href="/videos/video1">Get Started with Python Programming</a>
-            <p class="color-grey">Learn Python Programming</p>
+            <h3 class="margin-top-m">Video 1:</h3>
+            <a href="/videos/video1">Fundamentals of Python</a>
           </div>
           <p class="flex-none">
           </p>
@@ -41,8 +40,8 @@
 
         <div class="padding-m flex flex-column justify-content-space-between border-radius background-white color-dark margin-right-m margin-bottom-xl vid-card">
           <div class="flex-auto">
-            <h3 class="margin-top-m">Tutorial 2</h3>
-            <p class="color-grey">Create your development environment.</p>
+            <h3 class="margin-top-m">Video 2:</h3>
+            <a href="/videos/video2">Working with Data</a>
           </div>
           <p class="flex-none">
           </p>
@@ -50,8 +49,8 @@
 
         <div class="padding-m flex flex-column justify-content-space-between border-radius background-white color-dark margin-right-m margin-bottom-xl vid-card">
           <div class="flex-auto">
-            <h3 class="margin-top-m">Tutorial 3</h3>
-            <p class="color-grey">Create your development environment.</p>
+            <h3 class="margin-top-m">Video 3:</h3>
+            <a href="/videos/video3">Input and Output</a>
           </div>
           <p class="flex-none">
           </p>
@@ -59,8 +58,8 @@
 
         <div class="padding-m flex flex-column justify-content-space-between border-radius background-white color-dark margin-right-m margin-bottom-xl vid-card">
           <div class="flex-auto">
-            <h3 class="margin-top-m">Tutorial 4</h3>
-            <p class="color-grey">Create your development environment.</p>
+            <h3 class="margin-top-m">Video 4:</h3>
+            <a href="/videos/video4" class="color-grey">Making Decisions</a>
           </div>
           <p class="flex-none">
           </p>
@@ -71,8 +70,11 @@
      <div class="padding-m flex flex-column justify-content-space-between border-radius background-white color-dark margin-right-m margin-bottom-xl vid-card">
               <div class="flex-auto">
                 <h3 class="margin-top-m"><%= item.name %></h3>
-                <a href="<%= item.link %>">Get Started with Python Programming</a>
-                <p class="color-grey">Learn Python Programming</p>
+      <% if(item.title) { %>
+                <a href="/videos/<%= item.name %>"><%= item.title %></a>
+      <%  }else{ %>
+                <a href="/videos/<%= item.name %>"><%= item.name %></a>
+      <% } %>
               </div>
               <p class="flex-none">
               </p>

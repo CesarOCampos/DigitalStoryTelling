@@ -2,19 +2,13 @@
     <nav class="nav-inline position-right box-shadow-l">
   <ul>
     <li>
-      <a href="index" class="button button-s nav-button box-shadow-l">Home</a>
-    </li>
-    <li>
-      <p class="inter nav-user">Hello, User</p>
+      <a href="/" class="button button-s nav-button box-shadow-l">Home</a>
     </li>
     <li class="float-right">
-      <a href="login.html" class="button button-s nav-button box-shadow-l">Login</a>
+      <a href="/users/logout" class="button button-s nav-button box-shadow-l">Signout</a>
     </li>
     <li class="float-right">
-      <a href="..." class="button button-s nav-button box-shadow-l">Tutorials</a>
-    </li>
-    <li class="float-right">
-      <a href="..." class="button button-s nav-button box-shadow-l">Register</a>
+      <a href="/videos" class="button button-s nav-button box-shadow-l">Tutorials</a>
     </li>
   </ul>
 </nav>
@@ -64,19 +58,56 @@
 <div class="padding-top-xl">
   <form action="/admin/new" method="POST">
           <h1 class="text-align-center">Add Video</h1>
+          <strong><p>Submit only the Video ID</p></strong>
   <p class="field">
-    <label class="inter login-label" for="form-simple-link">Video Link: </label>
+    <label class="inter login-label" for="form-simple-link"><strong>ID Only<strong>Video ID: </label>
     <input type="link" id="email" name="videolink" placeholder="Video Link" />
   </p>
    <p class="field">
     <label class="inter login-label" for="form-simple-link">Video Name: </label>
     <input type="name" id="email" name="videoname" placeholder="Video Name" />
   </p>
+   <p class="field">
+    <label class="inter login-label" for="form-simple-link">Video Title: </label>
+    <input type="name" id="email" name="title" placeholder="Video Name" />
+  </p>
   <p class="field">
     <button type="submit" class="button login-button">Add Video</button>
   </p>
 
 </form>
+  
+  <table>
+  <caption> <h1 class="text-align-center">Videos Added</h1></caption>
+  <thead>
+    <tr>
+      <th scope="col">Link</th>
+      <th scope="col">Name</th>
+      <th scope="col">Title</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <% if(videotable) { %>
+      <% videotable.forEach(function(item) { %>
+      <tr>
+        <td> <%= item.link %> </td>
+        <td> <%= item.name %> </td>
+        <% if(item.title) { %>
+        <td> <%= item.title %>  </td>
+        <% } else { %>
+          <td> No Title Submitted </td>
+        <% } %>
+
+                          <td><form action="/admin/delete" method="post">
+    <input type="submit" name="deletevideo" value="<%= item.name %>" />
+</form></td>
+</tr>
+      <% }) } %>
+ </tbody>
+</table>
+
 
 </div>
         </div>  
