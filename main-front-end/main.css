@@ -1,0 +1,195 @@
+/*ALL NAV CSS*/
+/*Color scheme: https://coolors.co/d5573b-885053-777da7-94c9a9-c6ecae*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+html, body{
+	height: 100%;
+}
+
+.nav-right{
+	float: right;
+}
+
+.nav-background{
+	/*background: #777DA7;*/
+	background-color: #C1C3D7;
+}
+
+.nav-main{
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-right: 7px;
+	padding-left: 7px;
+}
+
+ul a.nav-main:hover {
+	background: #9094B6;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-right: 7px;
+	padding-left: 7px;
+}
+
+
+.nav-button{
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	background: #6AB487;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 8px;
+	padding-left: 8px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+/*Headings*/
+
+.heading{
+	font-family: 'Poppins', sans-serif;
+	font-size: 50px;
+}
+
+.heading-s{
+	font-family: 'Poppins', sans-serif;
+	font-size: 40px;	
+}
+
+/*Paragraphs*/
+
+.pop{
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+}
+
+
+/*Page Gray*/
+
+.segment{
+	background-color: #C1C3D7;
+	height: 400px;
+}
+
+.segment-one{
+	background-color: #C1C3D7;
+	height: 400px;
+}
+
+.segment-red{
+	/*background-color: #C1C3D7;*/
+	background-color: #777DA7;
+
+	/*height: 400px;*/
+}
+
+.segment-green{
+	background-color: #84B082;
+}
+
+.footer{
+	display: flex;
+	flex-direction: row;
+}
+
+body{
+	background-color: #C1C3D7;
+}
+
+/*Buttons*/
+
+.lead-button{
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	background: #D5573B;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 12px;
+	padding-left: 12px;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+.lead-button-green{
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	background: #6AB487;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 12px;
+	padding-left: 12px;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+
+/*TEXT*/
+
+/*CARDS*/
+.card{
+	background-color: #B8B8FF;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	font-weight: lighter;
+}
+
+.py{
+	background-color: #9381FF;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap; /* Optional. only if you want the items to wrap */
+    justify-content: center; /* For horizontal alignment */
+    align-items: center; /* For vertical alignment */
+}
+
+
+
+.card-flex{
+	flex: 1 1 auto;
+}
+
+@media only screen and (max-width : 320px) {
+	.segment{
+		height: 500px;
+	}
+}
+
+/*Fonts*/
+
+.poppins{
+	font-family: 'Poppins', sans-serif;
+}
+
+/*Footer */
+
+.footer-ul{
+	font-family: 'Poppins', sans-serif;
+	list-style: none;
+	padding-bottom: 10px;
+}
+
+.footer-ul h1{
+	text-decoration: underline;
+	font-size: 20px;
+}
+
+.footer-ul li{
+	font-size: 15px;
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+  	.segment-one{
+  		height: 650px;
+  	}
+}
