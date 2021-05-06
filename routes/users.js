@@ -11,7 +11,11 @@ router.get('/', (req,res) => {
 })
 
 router.get('/login', (req, res) => {
-	res.render('login')
+	// console.log(JSON.stringify(req.flash('loginMessage')))
+	let e = JSON.stringify(req.flash('loginMessage'))
+	 e = e.replace('[', " ")
+	e = e.replace(']', " ")
+	res.render('login', {error: e })
 })
 
 router.get('/register', (req,res) => {
@@ -95,10 +99,13 @@ router.post('/register', (req,res) => {
 
 router.post('/login', (req,res, next) => {
 	passport.authenticate('local', {
-		successRedirect: '/profile',
+		successRedirect: '/videos',
 		failureRedirect: '/users/login', //Add a redirect message here
+		failureFlash: true
 	})(req, res, next)
 })
+
+
 
 // Logout
 router.get('/logout', (req,res) => {

@@ -1,87 +1,59 @@
- <nav class="nav-inline position-right box-shadow-l">
-  <ul>
-    <li>
-      <a href="/" class="button button-s nav-button box-shadow-l">Home</a>
-    </li>
-    <li class="float-right">
-      <a href="/users/login" class="button button-s nav-button box-shadow-l">Login</a>
-    </li>
-    <li class="float-right">
-      <a href="/videos" class="button button-s nav-button box-shadow-l">Tutorials</a>
-    </li>
-    <li class="float-right">
-      <a href="/users/register" class="button button-s nav-button box-shadow-l">Register</a>
-    </li>
-  </ul>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <main >
+    <!-- Page Title -->
+    <title>Register</title>
 
-      <div class="flexbox">
+    <!-- turretcss CSS -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/turretcss/dist/turretcss.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="videos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 
-        <div class="padding-m border-radius background-white margin-right-xl box-shadow-xl margin-top-xl margin-bottom-xl">
-          <h3 class="color-dark margin-top-m text-align-center login-label">Login</h3>
-            <div class="login">
-<%- include ("./partials/messages"); %>
-              <form action="/users/register" method="POST">
+  </head>
+  <body>
+<main>
+
+<div class="container login-new">
+    <div class="login-card border-radius box-shadow-m">
+      <h1 class="poppins text-align-center">Register</h1>
+        <div>
+             <form action="/users/register" method="POST">
+             <%- include ("./partials/messages"); %>
   <p class="field">
-    <label class="inter login-label" for="form-simple-email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Enter Email" value="<%= typeof email != 'undefined' ? email : '' %>" />
+    <label class="pop" for="form-simple-email">Email</label>
+    <input class="poppins" type="email" id="email" name="email" placeholder="Enter Email" value="<%= typeof email != 'undefined' ? email : '' %>" />
   </p>
     <p class="field">
-    <label class="inter login-label" for="form-simple-email">Username</label>
-    <input type="name" id="name" name="name" placeholder="Enter Name" value="<%= typeof name != 'undefined' ? name : '' %>"/>
+    <label class="pop" for="form-simple-email">Username</label>
+    <input class="poppins" type="name" id="name" name="name" placeholder="Enter Name" value="<%= typeof name != 'undefined' ? name : '' %>"/>
   </p>
   <p class="field">
-    <label class="inter login-label" for="form-simple-password">Password</label>
-    <input type="password" id="password" name="password" placeholder="Enter Password" value="<%= typeof password != 'undefined' ? password : '' %>" />
+    <label class="pop" for="form-simple-password">Password</label>
+    <input class="poppins" type="password" id="password" name="password" placeholder="Enter Password" value="<%= typeof password != 'undefined' ? password : '' %>" />
   </p>
   <p class="field">
-    <label class="inter login-label" for="form-simple-password">Enter Password Again</label>
-    <input type="password" id="password2" name="password2" placeholder="Enter Password Again" value="<%= typeof password2 != 'undefined' ? password2 : '' %>" />
+    <label class="pop" for="form-simple-password">Enter Password Again</label>
+    <input class="poppins" type="password" id="password2" name="password2" placeholder="Enter Password Again" value="<%= typeof password2 != 'undefined' ? password2 : '' %>" />
   </p>
   <p class="field">
-    <button type="submit" class="button login-button">Register</button>
-    <button type="reset" class="button nav-button login-button">Reset</button>
-    <a class="text-align-center margin-left-xl" href="login">Or Login</a>
+    <button type="submit" class="nav-button">Register</button>
   </p>
 
 </form>
-
-
-            </div>
-
         </div>
-
-      </div>
-
-
-
-  </main>
-
-  <footer class="footer padding-vertical-xl border-top border-color-primary-600 segmentcolor">
-  <div class="container">
-
-    <div class="text-align-center">
-    <h2 class="display-title display-title-l margin-bottom-m">Digital Story Telling</h2>
-    <nav class="nav-inline">
-      <li>
-        <a href="">Contact</a>
-      </li>
-      <li>
-        | 
-      </li>
-      <li>
-        <a href="">Mission</a>
-      </li>
-      <li>
-        | 
-      </li>
-      <li>
-        <a href="">Contribute</a>
-      </li>
-    </nav>
+    </div> 
   </div>
 
-  </div>
-</footer>
+
+</main>
+
+
+  </body>
+</html>

@@ -168,6 +168,10 @@ body{
 	font-family: 'Poppins', sans-serif;
 }
 
+.hidden{
+	display: none;
+}
+
 /*Footer */
 
 .footer-ul{
@@ -177,7 +181,7 @@ body{
 }
 
 .footer-ul h1{
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 	font-size: 20px;
 }
 

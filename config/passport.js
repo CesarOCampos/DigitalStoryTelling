@@ -10,15 +10,16 @@ const User = require('../models/User')
 module.exports = function(passport) {
 	passport.use(
 		new LocalStrategy({
-			usernameField: 'email'
-		}, (email, password, done) => {
+			usernameField: 'email',
+			passReqToCallback: true,
+		}, (req, email, password, done) => {
 			// Match User
 			User.findOne({
 				email: email
 			})
 			.then(user => {
 				if(!user){
-					return done(null, false, {message: 'That email is not registered'});
+					return done(null, false, req.flash('loginMessage', 'No User For this Email'));
 					console.log("Email not in use")
 				}
 
@@ -30,7 +31,7 @@ module.exports = function(passport) {
 					if(isMatch){
 						return done(null, user)
 					} else{
-						return done(null, false, {message: "Password is incorrect"})
+						return done(null, false, req.flash('loginMessage', 'Wrong Password'))
 						console.log("Email not in use")
 					}
 				})

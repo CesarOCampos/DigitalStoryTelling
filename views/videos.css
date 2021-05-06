@@ -13,7 +13,7 @@
 }
 
 .programming{
-	margin-top: 400px;
+	margin-top: 1100px;
   margin-bottom: 100px;
   margin-right: 50px;
   margin-left: 50px;
@@ -36,6 +36,15 @@
 .video-save:hover{
   background: #9094B6;
   text-decoration: underline;
+}
+
+.script-box{
+  background: #9094B6;
+}
+
+.exercise{
+  background: #9094B6;
+  width: 500px;
 }
 
 @media only screen 

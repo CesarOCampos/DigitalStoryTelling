@@ -1,117 +1,89 @@
- <nav class="nav-inline position-right box-shadow-l">
+
+
+    <nav class=" nav-background padding-xs nav-inline">
   <ul>
     <li>
-      <a href="/" class="button button-s nav-button box-shadow-l">Home</a>
+      <a class="nav-main border-radius" href="/videos">Videos</a>
     </li>
-    <li class="float-right">
-      <a href="/users/logout" class="button button-s nav-button box-shadow-l">Logout</a>
+    <li>
+      <a class="nav-main border-radius" href="/">Home</a>
     </li>
-    <li class="float-right">
-      <a href="/videos" class="button button-s nav-button box-shadow-l">Tutorials</a>
+    
+    <li class="nav-right">
+      <a class="nav-button border-radius" href="/users/logout">Signout</a>
     </li>
   </ul>
 </nav>
 
-  <main >
+<main>
+  <!-- 
+  <section>
+    <div class="segment flex flex-justify-center">
 
-  	<section>
-      <div class="container margin-bottom-xl margin-top-xl margin-left-l">
-        <h1 class="video-heading">
-          Videos
-        </h1>
-     </div> 
-    </section>
+    
+        <h1 class="heading padding-left-xl">Python Programming Videos</h1>
 
+    </div>  
+
+  </section -->
 
     <section>
-      <div class="flex-cards">
-
-         <div class="padding-m flex flex-column justify-content-space-between border-radius background-white color-dark margin-right-m margin-bottom-xl vid-card">
-          <div class="flex-auto">
-            <h3 class="margin-top-m">Video 1:</h3>
-            <a href="/videos/video1">Fundamentals of Python</a>
-          </div>
-          <p class="flex-none">
-          </p>
+    <div class="segment-one padding-top-xl">
+        <h1 class="heading-s text-align-center">Python Programming Videos</h1>
+        <div class="flex flex-row box">
         </div>
 
-        <div class="padding-m flex flex-column justify-content-space-between border-radius background-white color-dark margin-right-m margin-bottom-xl vid-card">
-          <div class="flex-auto">
-            <h3 class="margin-top-m">Video 2:</h3>
-            <a href="/videos/video2">Working with Data</a>
-          </div>
-          <p class="flex-none">
-          </p>
+        <div class="flex flex-row padding-m box">
+        <a class="card padding-s margin-right-s margin-bottom-s border-radius box-shadow-m" href="video1"> Video 1 - Fundamentals of Python</a>
+            <a class="card padding-s margin-right-s margin-bottom-s border-radius box-shadow-m" href="video2"> Video 2 - Working With Data</a>
+            <a class="card padding-s margin-right-s margin-bottom-s border-radius box-shadow-m" href="video3"> Video 3 - Input and Output</a>
+            <a class="card padding-s margin-right-s margin-bottom-s border-radius box-shadow-m" href="video4"> Video 4 - Making Decisions</a>
+
+                  <% if(videos) { %>
+          <% videos.forEach(function(item) { %>
+            <a class="card padding-s margin-right-s margin-bottom-s border-radius box-shadow-m" href="/videos/<%= item.name %>"> <%= item.name %> - <%= item.title %></a>
+            <% }) } %>
         </div>
 
-        <div class="padding-m flex flex-column justify-content-space-between border-radius background-white color-dark margin-right-m margin-bottom-xl vid-card">
-          <div class="flex-auto">
-            <h3 class="margin-top-m">Video 3:</h3>
-            <a href="/videos/video3">Input and Output</a>
-          </div>
-          <p class="flex-none">
-          </p>
-        </div>
 
-        <div class="padding-m flex flex-column justify-content-space-between border-radius background-white color-dark margin-right-m margin-bottom-xl vid-card">
-          <div class="flex-auto">
-            <h3 class="margin-top-m">Video 4:</h3>
-            <a href="/videos/video4" class="color-grey">Making Decisions</a>
-          </div>
-          <p class="flex-none">
-          </p>
-        </div>
-
-      <% if(videos) { %>
-      <% videos.forEach(function(item) { %>
-     <div class="padding-m flex flex-column justify-content-space-between border-radius background-white color-dark margin-right-m margin-bottom-xl vid-card">
-              <div class="flex-auto">
-                <h3 class="margin-top-m"><%= item.name %></h3>
-      <% if(item.title) { %>
-                <a href="/videos/<%= item.name %>"><%= item.title %></a>
-      <%  }else{ %>
-                <a href="/videos/<%= item.name %>"><%= item.name %></a>
-      <% } %>
-              </div>
-              <p class="flex-none">
-              </p>
-            </div>
-      <% }) } %>
-
-         
-
-       
-
-
-
-      </div>
+    </div>
     </section>
 
-  </main>
 
-  <footer class="footer padding-vertical-xl border-top border-color-primary-600 segmentcolor">
-  <div class="container">
+<section>
+    <div class="segment padding-top-xl">
+        <!-- <h1 class="pop text-align-center">Programming Resources</h1> -->
+        <h1 class="heading-s text-align-center">Programming Resources</h1>
+        <p class="text-align-center text-underline">Use these resources for the videos</p>
 
-    <div class="text-align-center">
-    <h2 class="display-title display-title-l margin-bottom-m">Python Programming</h2>
-    <nav class="nav-inline">
-      <li>
-        <a href="">Contact</a>
-      </li>
-      <li>
-        | 
-      </li>
-      <li>
-        <a href="">Mission</a>
-      </li>
-      <li>
-        | 
-      </li>
-      <li>
-        <a href="">Contribute</a>
-      </li>
-    </nav>
-  </div>
+
+        <div class="flex flex-row padding-m box">
+        <a class="py padding-s margin-right-s border-radius box-shadow-m" href=""> Python</a>
+        </div>
+
+        <div class="flex flex-row padding-m box">
+            <a class="video-card padding-s margin-right-s margin-bottom-s border-radius box-shadow-m" href="video"> Sublime Text</a>
+            <a class="video-card padding-s margin-right-s margin-bottom-s border-radius box-shadow-m" href="video"> VS Code</a>
+            <a class="video-card padding-s margin-right-s margin-bottom-s border-radius box-shadow-m" href="video"> PyCharm</a>
+            <a class="video-card padding-s margin-right-s margin-bottom-s border-radius box-shadow-m" href="video"> XCode - For Macs</a>
+        </div>
+    </div>
+    </section>
+
+<footer>
+  <div class="footer segment-red box margin-top-m padding-top-m">
+    
+    <div class="flex flex-column padding-right-xl">
+
+       <ul class="footer-ul">
+        <li class="footer-ul text-align-center"><h1 class="poppins">About</h1></li>
+        <li class="footer-ul text-align-center"><a href="">UH</a></li>
+        <li class="footer-ul text-align-center"><a href="">Statement</a></li>
+        <li class="footer-ul text-align-center"><a href="">Sitemap</a></li>
+      </ul> 
+    </div>
 
   </div>
 </footer>
+
+

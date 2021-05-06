@@ -1,0 +1,113 @@
+Tobias going down a hallway of the haunted mansion and sees Belle and Gretchen hanging out in Gretchen’s room reading a book together
+
+Tobias: Good morning Miss Gretchen, I see you have a companion today…
+
+Belle: Hey Toby!
+
+Tobias: That's not my name dammit! (sounds irritated)
+
+Gretchen: Oh, Belle he’s so very touchy about his name.
+
+Tobias: Not to be nosy but what are you girls reading about?
+
+Gretchen: We have found the subject of computers rather interesting as of late and we have gotten a long way since we last talked about input and output.
+
+Tobias: That is great! What subject are you studying now?
+
+Belle: Well we have gotten to classes but it's a little confusing, mind helping us out?
+
+Tobias: Absolutely! I have tutored many of the greatest minds of your human kind and I will help cultivate yours as well.
+
+Belle: Wait who have you tutored before us?
+
+Tobias: Well only the greats like Alexander the Great, Napoleon, Stalin- (voice trails off)
+
+Belle looks horrified
+
+Gretchen: (Clears throat) So about classes…
+
+Tobias: Right, so beyond socioeconomic classes which must be destroyed because the world has a great issue with wealth gaps, computers also use classes.
+
+Tobias: First, let’s start from the basics. Python is an Object Oriented Programming Language.
+
+Belle: What does that mean?
+
+Tobias: Well if you don't interrupt, I can tell you. Did you think I was just going to say something like that and just leave? Insufferable!
+
+Gretchen snickers
+
+Belle: Ok Toby just chill
+
+Tobias: Python is an object oriented language because Python uses objects. Objects are instances of classes.
+
+Gretchen and Belle stare at Tobias blankly
+
+Gretchen: Tobias must you really explain things in such a confusing manner?
+
+Tobias: Silence children allow me to continue. (sounds angry)
+
+Tobias: (calms down) Perhaps an example will help. We try to organize and categorize everything in our lives. For example, the category of fruit has members such as lemon, strawberry, and kiwi.
+
+Belle: That sounds like such a good flavor profile for a refreshing drink.
+
+Tobias: I find the ever decreasing attention span of your generation truly appalling. (eye roll)
+
+Gretchen: Just continue Tobias.
+
+Tobias: So, if we try to relate this to computer classes, Fruit is a “class” and Lemon is an “object” that is an instance.
+
+Belle: Okay, I know you said this is to help stay organized, but could you explain this more in the context of computers?
+
+Tobias: Of course! When programmers like you write code, they do not want to write similar code over and over again. So they organize the code into classes and objects.
+
+Tobias: Let’s go back to the fruit example. If we are making an app which is an encyclopedia of produce. For fruit produce, we might have attributes like its name, color, and flavor, whether it is poisonous and we might have some functions that print its description and whether it is edible.
+
+Gretchen: It has just occurred to me that a serpent is speaking of fruit and has yet to mention an apple. Looks at camera like Jim from the office
+
+Belle: Honestly, I think hanging out with me has made you lose some of that amazing wit that you're known for, Gretchen.be
+
+Tobias: Truly a repulsive and offensive joke. If I were to entrap you, it would be far more tactful than my idiot great grandfather.
+
+Tobias: Anyways, back to the app. Instead of writing the same code over and over for every fruit, we can just make a class called fruit. This will be our template for each fruit in the encyclopedia. Once we make our template with the name, color, flavor, poison factor, and the functions to print descriptions and determine whether it is edible, we can start making objects or instances of this class. We can have a pineapple, a mango, a lychee fruit, and many more. Each following a template instead of having to write code over and over again.
+
+Belle: That’s actually really cool! Saves a lot of time for a lazy person like me.
+
+Gretchen: So suffice to say, programmers are the lazy kind of smart.
+
+Tobias: Well… (looks at camera like Jim from The Office)
+	Now that we have discussed the topic let's look at some code that I found on “code academy.”  I DID NOT WRITE IT MYSELF.
+This snippet will make the class and write the attributes and define functions:
+class Fruit(object):
+ """A class that makes various tasty fruits."""
+ def __init__(self, name, color, flavor, poisonous):
+   self.name = name
+   self.color = color
+   self.flavor = flavor
+   self.poisonous = poisonous
+ 
+ def description(self):
+   print "I'm a %s %s and I taste %s." % (self.color, self.name, self.flavor)
+ 
+ def is_edible(self):
+   if not self.poisonous:
+     print "Yep! I'm edible."
+   else:
+     print "Don't eat me! I am super poisonous."
+
+Next we will create a lemon instance and call its functions that it gets as part of the class fruit:
+
+lemon = Fruit("lemon", "yellow", "sour", False)
+ 
+lemon.description()
+lemon.is_edible()
+
+
+Belle: Well, thanks Toby, that was really interesting and helpful!
+
+Tobias: You are welcome Miss Belle, besides your incessant interruptions, you both are very intelligent women and I am glad you decided to study this subject. We need more women like you in this field because I am deeply certain women are the key to world domination.
+
+Belle: I think the phrase is “Who runs the world? Girls!”
+
+Gretchen: I do believe Beyonce was absolutely correct in her observation. Now get out of our room dad! (face shows extreme embarrassment) I mean- Toby! Wait - agh- Tobias!
+
+Tobias: Yes Gretchen I shall take my leave, but always remember Gretchen, your father loved you and he will come back from his 5 year business trip someday. 

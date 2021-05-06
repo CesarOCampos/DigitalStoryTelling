@@ -1,5 +1,6 @@
 <% if(typeof errors != 'undefined') { %>
 	<% errors.forEach(function(error) { %>
-		<h3> <%= error.msg %> </h3>	
+		<p style="text-decoration: underline; font-weight: bold; border: none; border-radius: 5px; background: #C1C3D7; padding: 2px; padding-left: 5px;"> <%= error.msg %>! </p>	
 	<% }) %>
 <% } %>
+

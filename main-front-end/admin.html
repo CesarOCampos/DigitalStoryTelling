@@ -1,16 +1,34 @@
-  <nav class=" nav-background padding-xs nav-inline">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Page Title -->
+    <title>turretcss</title>
+
+    <!-- turretcss CSS -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/turretcss/dist/turretcss.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="videos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  </head>
+  <body>
+
+    <nav class=" nav-background padding-xs nav-inline">
   <ul>
     <li>
-      <a class="nav-main border-radius" href="/videos">Videos</a>
+      <a class="nav-main border-radius" href="...">Videos</a>
     </li>
-
-    
     <li>
-      <a class="nav-main border-radius" href="/admin">Admin</a>
+      <a class="nav-main border-radius" href="...">Profile</a>
     </li>
     
     <li class="nav-right">
-      <a class="nav-button border-radius" href="/users/logout">Signout</a>
+      <a class="nav-button border-radius" href="...">Signout</a>
     </li>
   </ul>
 </nav>
@@ -26,13 +44,16 @@
     </div>  
 
   </section -->
-<div class="flex flex-column">
+
     <section>
     <div class="segment-one padding-top-xl">
         <h1 class="heading-s text-align-center">Admin Dashboard</h1>
+        <div class="flex flex-row box">
+        </div>
 
 <div class="container">
            <table>
+      <caption>Table Caption</caption>
       <thead>
         <tr>
           <th scope="col">Name</th>
@@ -65,7 +86,7 @@
 
 
 <section>
-    <div class="container addvideo padding-top-xl">
+    <div class="addvideo padding-top-xl">
         <!-- <h1 class="pop text-align-center">Programming Resources</h1> -->
         <h1 class="heading-s text-align-center">Add a Video</h1>
         <p class="pop text-align-center underline">Please submit only the video ID for the Link</p>
@@ -88,23 +109,22 @@
   </p>
 
 </form>
-</div>
-    </div>
-    </section>
 
-<section>
-  <div class="container panel">
-    <table>
+  <table>
+  <caption> <h1 class="text-align-center">Videos Added</h1></caption>
+  <caption>
+  <p class="pop text-align-center">Remove Added Videos</p>
+  </caption>
   <thead>
-    <caption>    <h1 class="poppins text-align-center">Videos Added</h1></caption>
-    <tr >
+    <tr class="pop">
       <th scope="col">Link</th>
       <th scope="col">Name</th>
       <th scope="col">Title</th>
       <th scope="col">Delete</th>
     </tr>
   </thead>
-  <tbody >
+  <tbody class="pop">
+      <tr>
         <% if(videotable) { %>
       <% videotable.forEach(function(item) { %>
       <tr>
@@ -118,16 +138,17 @@
                           <td><form action="/admin/delete" method="post">
     <input type="submit" name="deletevideo" value="<%= item.name %>" />
 </form></td>
+
 </tr>
       <% }) } %>
  </tbody>
 </table>
 
-  </div>
-</section>
-
 
 </div>
+
+    </div>
+    </section>
 
 <footer>
   <div class="footer segment-red box margin-top-m padding-top-m">
@@ -144,3 +165,9 @@
 
   </div>
 </footer>
+
+</main>
+
+
+  </body>
+</html>

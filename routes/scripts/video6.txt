@@ -1,0 +1,173 @@
+Courtney in Library
+
+Courtney: Hey Rose! Hey Tobias! Just trying to organize my planner, what are y’all up to in the library?
+
+Tobias: I am simply browsing the biographies and history section for some light reads on world domination.
+
+Rose: And I am helping him because I want to know what a government run by a snake 
+would be like. Also, on the off chance that he succeeds, I want to be his highest ranking military advisor.
+
+Courtney: Umm… cool, very edge lord of you too.
+
+Tobias and Rose at the same time: Huh?
+
+Courtney: Oh it just means yall try real hard to look unique or different
+
+Tobias and Rose’s faces turn red with rage
+
+Courtney: So anyways… I wanted to make a program in Python for my scheduling and I need some help.
+
+Tobias: Very interesting that you dare beg for help after attacking my whole personality
+
+Courtney: Heh. Please? I can help look for yalls books or whatever
+
+Rose: It's too late you will be one of our first prisoners, we don't want your help, but we will very graciously offer you some help now.
+
+Tobias: Since you are using numbers to count hours of work and dates to schedule the work, this seems like the perfect moment to learn about the number and date functions for python.
+
+Rose: Numbers have many types as we have learned in math. You can have integers, decimals, negative numbers, and so many more. 
+
+Tobias: In python, we will deal with ints, floats, and complex.
+
+Rose: int stands for integer, which means a whole number, positive or negative, without decimals, of unlimited length.
+
+Tobias: For example, you can save an integer value of 100, -3000, or 541,890,342.
+
+Rose: So in your scheduling / planning program, we could save an integer with the value 20 to signify the 20 years our world domination plan will take.
+
+Courtney: Cool so what else?
+
+Tobias: Next, we have floats
+
+Rose: a Float is just python speak for a decimal number
+
+Tobias: to be more precise, it is a a number, positive or negative, containing one or more decimals
+
+Rose: So to be more precise, our plan will take exactly 20.76354839-
+
+Courtney: Okay okay chill whats the next one, damn
+Rose: -years
+
+Tobias: Finally we have complex numbers
+
+Rose: Sounds complicated!
+
+Courtney: Ew Rose, please! That was so bad it literally hurt.
+
+Tobias: A complex number is created from real numbers. Complex numbers which are mostly used where we are using two real numbers. Complex numbers are written with a "j" as the imaginary part:
+
+Rose: Here is some sample code <turns to camera with creepy eyes super wide face, camera focuses on rose’s face> brought to you by W3schools <turns back to courtney> 
+
+x = 3+5j
+y = 5j
+z = -5j
+
+print(type(x))
+print(type(y))
+print(type(z))
+
+Courtney: Hmm that one looks like fun. Speaking of which, Tobias, you seem to be in a very good mood! Far less rude and disagreeable than usual.
+
+Tobias: I truly wonder why I continue to help you after suffering through these thinly veiled insults but let us continue.
+
+Rose: You can convert numbers between different types using type conversion methods.
+
+Tobias: With the int(), float(), and complex() methods, one can switch from int to float, float to complex and more. 
+
+Rose: Here is some more sample code <turns to camera with creepy eyes super wide face, camera focuses on rose’s face> brought to you by W3schools <turns back to courtney> 
+
+x = 1    # int
+y = 2.8  # float
+z = 1j   # complex
+
+#convert from int to float:
+a = float(x)
+
+#convert from float to int:
+b = int(y)
+
+#convert from int to complex:
+c = complex(x)
+
+print(a)
+print(b)
+print(c)
+
+print(type(a))
+print(type(b))
+print(type(c))
+
+Rose: You can also use the random module to create random numbers
+
+Rose: Here is some more sample code <turns to camera with creepy eyes super wide face, camera focuses on rose’s face> brought to you by no other than: W3schools!!! <turns back to courtney, who is rolling her eyes> 
+
+import random
+
+print(random.randrange(1, 10))
+
+Tobias: Now that we’re done with numbers, let's move on to dates.
+
+Rose: While a date is not a data type in Python on its own, once we import the datetime module, we can manipulate dates and times far easier.
+
+Courtney: So you can time travel and stuff?
+
+Tobias: (sighs) If only. That would cut our 20 year plan in half for sure.
+
+Courtney: (stares at camera like Jim in the office) I was just saying a REALLY bad joke and it went straight over their heads
+
+Rose: Here is some sample code on how to display the current date and time <turns to camera with creepy eyes super wide face, camera focuses on rose’s face> brought to you by-
+
+Tobias: (uses tail to push rose’s head out of the camera shot) by W3 schools! We know, we know.
+
+import datetime
+
+x = datetime.datetime.now()
+print(x) 
+
+Rose: This code will show you the current date and time down to the microsecond like this, 2021-04-10 00:03:24.941519
+
+Tobias: Here is how you can create a date object
+
+Rose: You will first import datetime, then replace the numbers in the code with the numbers you would like to use for your date object.
+
+import datetime
+
+x = datetime.datetime(2020, 5, 17)
+
+print(x)
+
+Courtney flies a plane across the screen with the banner reading “code from w3 schools” attached to it
+
+Tobias: Finally let us learn about the strftime() method.
+
+Rose: This method can be used to format a date object’s contents into a readable format.
+
+Tobias: In the parenthesis, you will put in characters which will be the parameter for the function.
+
+Rose: Here is an example:
+
+Tobias springs across the screen: with banner reading ‘CODE FROM W3SCHOOLS’
+import datetime
+
+x = datetime.datetime(2018, 6, 1)
+
+print(x.strftime("%B"))
+
+Tobias: Which in this specific case will print out the month for this object as %B signals the function to print the name of the month.
+
+More options can be found in the table at the bottom of this page: https://www.w3schools.com/python/python_datetime.asp
+
+Courtney: Well this was quite a bit to digest but thank you for taking the time to explain to me!
+
+Rose: No problem!
+
+
+Tobias: My pleasure!
+
+Courtney: Really!?!
+
+Tobias: No actually I hate teaching.
+
+Rose and Tobias walk away
+
+Courtney turns to the camera like Jim from the office and says: Yeah no, I know how to do most of this, I just wanted to delay their plans of world domination by a couple hours so they don't get too excited and do something rash. Such are the woes and tribulations of the world’s unsung heroes. Courtney winks at the camera and the episode ends.  

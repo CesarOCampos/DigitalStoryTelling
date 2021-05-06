@@ -1,133 +1,103 @@
- <nav class="nav-inline position-right box-shadow-l">
+<nav class=" nav-background padding-xs nav-inline">
   <ul>
     <li>
-      <a href="/" class="button button-s nav-button box-shadow-l">Home</a>
+      <a class="nav-main border-radius" href="/videos">Videos</a>
     </li>
-    <li class="float-right">
-      <a href="/videos" class="button button-s nav-button box-shadow-l">Tutorials</a>
+    <li>
+      <a class="nav-main border-radius" href="/">Home</a>
+    </li>
+    
+    <li class="nav-right">
+      <a class="nav-button border-radius" href="/users/logout">Signout</a>
     </li>
   </ul>
 </nav>
 
-  <main >
+<main>
+  <!-- 
+  <section>
+    <div class="segment flex flex-justify-center">
 
-  	<section>
-      <div class="container margin-bottom-xl margin-top-xl margin-left-l">
-        <h1 class="video-heading hidden" id="title"><%= heading %></h1>
+    
+        <h1 class="heading padding-left-xl">Python Programming Videos</h1>
+
+    </div>  
+
+  </section -->
+
+
+    <section>
+      <div class="">
+        <h1 class="hidden" id="title"><%= heading %></h1>
      </div> 
     </section>
 
     <section>
-      <div class="container margin-bottom-xl margin-top-xl margin-left-l">
-        <h1 class="video-heading text-align-center"> Working with Data</h1>
-     </div> 
-    </section>
-
-  
-    <section>
-        <div class="flex-center margin-bottom-m">
-           
-        </div> 
-
-    </section>
-
-    <section>
-      <div class="video-flex vid-l margin-bottom-xl">
-
-        <div class="margin-left-xl" id="yplayer">
-<iframe class="box-shadow-l" id="video" width="853" height="480" src="<%= videolink %>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-       <div class="margin-left-xl video-exercise border-radius">
-      <h1 class="text-align-center padding-bottom-s">Video Script</h1>
-      <div class="script-div">
-      
-        <p>Narrator: Now, in this chapter, we’ll be going over how to store certain information. The information is stored on the computer, more specifically memory in your computer.
-This will be useful in your journey as a computer scientist because it is a way to store bits of information, so you can do a lot of things with them like adding them together or storing words, letters, or sentences. This is a big milestone to your journey on becoming a programmer!
-</p>
-
-
-<p>Python: Okay, now listen because you're gonna be using this ALL the time.</p>  
-<p>Agnes: Help me! I need strength to carry on. I think I’m going to be sick.</p> 
-<p>(Agnes begins to retch)</p>  
-<p>Python: Pull yourself together, man! Just listen and you'll be just fine. But you MUST know this!</p>  
-<p>Agnes: I’m scared. Hold me! *hugs Python*</p>
-<p>Python: Please don't touch me again.</p>
-<p>*Agnes continues to cling on to Python, clutching harder by the second*</p>
-<p>*Python begins to red from the circulation being cut off to his head, eyes begin to look like they are about to pop*</p>
-<p>Python: Alright, that’s it!!(munch sound)</p>
-<p>*Python the python bites Agnes*                                                         </p>
-<p>Agnes: Wha, wha whaaaat...?!</p>
-<p>*Agnes goes into a deep trance and then slowly slips into the Matrix*</p>
-<p>*Agnes wakes up in the Matrix*</p>
-<p>Agnes: Where am I?</p>
-<p>Python: Don’t worry, sit still. We’re just going to download all this information into your brain.</p>
-<p>(Agnes still half dazed and concussed)</p>
-<p>Agnes: You’re gonna do what now and in the who now? What smells so bad?</p>
-<p>*Python plugs Agnes into the Matrix and Agnes is now downloading information into her brain*</p>
-<p>Python (voice over with example of setting a variable with a value)</p>
-<p>When you're programming, you need to store stuff into what's called a variable. </p>
-<p>Agnes: Umm, alright.</p>
-
-
+    <div class="segment-one padding-top-xl ">
+        <h1 class="heading-s text-align-center">Python Programming Videos</h1>
+        <div class="video-div">
+        <div id="yplayer">
+          <iframe class="video" id="video" src="<%= videolink %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    </div>
-
         </div>
-    </section>
+        <div class="video-div margin-bottom-xl"> 
+        <button class="margin-top-xl padding-xl video-save nav-button" type="submit" id="test"> Save Video </button>
+             <div class="container">
+          <h1 class="padding-top-m poppins">Video Script</h1>
+              <div class="script-box padding-xl border-box">
+                
+                  <% if(script) { %>
+                    <textarea class="" name="script" id="" cols="30" rows="10" readonly>
+                  <%= script %>
+                  </textarea>
+                  <% } else { %>
+                    <p>No text</p>
+                <% } %>
 
-    <section>
-      <div class="flex-center margin-bottom-xl padding-top-s padding-bottom-s background-light-900 border-radius" style="margin-right: 450px; margin-left: 450px">
-        <button class="margin-right-m inter" type="submit" id="test"> Save Video </button>
+              </div>
+        </div>
+
+        <div class="container video-div margin-top-m">
+          <h1 class="padding-top-m poppins text-align-center">Python Exercise</h1>
+              <div class="exercise padding-xl border-box">
+                
+                    
+                   <% if(exercise) { %>
+                    <textarea class="" name="script" id="" cols="30" rows="10" readonly>
+                  <%= exercise %>
+                  </textarea>
+                  <% } else { %>
+                    <p>No Exercise</p>
+                <% } %>
+
+              </div>
+        </div>
       </div>
+    </div>
+
     </section>
 
-    <section>
-      <div class="container info padding-m border-radius box-shadow-xl margin-top-xl margin-bottom-xl">
-        <h1 class="text-align-center">Exercise: </h1>
-        <p class="text-align-center">Define a variable named city and set it equal to any string.</p>
-<p class="text-align-center">Define a variable named price and set it equal to any float.</p>
-<p class="text-align-center">Define a variable named high_score and set it equal to any int.</p>
-<p class="text-align-center">Define a variable named is_having_fun and set it to a boolean value.</p>
-      </div>
-    </section>
+<section>
+    <div class="segment padding-top-xl programming ">
+        <h1 class="pop text-align-center">Python Interpreter</h1>
+        <iframe src="https://trinket.io/embed/python" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    </div>
+</section>
 
-    <section>
-        <h1 class="inter display-title-xl text-align-center">Python Interpreter</h1>
-        <div class="container margin-bottom-xl margin-top-xl">
-        <iframe src="https://trinket.io/embed/python/6772cf21db" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-      </div>
-    </section>
+<footer>
+  <div class="footer segment-red box margin-top-m padding-top-m">
+    
+    <div class="flex flex-column padding-right-xl">
 
-  </main>
-
-  <footer class="footer padding-vertical-xl border-top border-color-primary-600 segmentcolor">
-  <div class="container">
-
-    <div class="text-align-center">
-    <h2 class="display-title display-title-l margin-bottom-m">Digital Story Telling</h2>
-    <nav class="nav-inline">
-      <li>
-        <a href="">Contact</a>
-      </li>
-      <li>
-        | 
-      </li>
-      <li>
-        <a href="">Mission</a>
-      </li>
-      <li>
-        | 
-      </li>
-      <li>
-        <a href="">Contribute</a>
-      </li>
-    </nav>
-  </div>
-
+      <ul class="footer-ul">
+        <li class="footer-ul text-align-center"><h1 class="poppins">About</h1></li>
+        <li class="footer-ul text-align-center"><a href="">UH</a></li>
+        <li class="footer-ul text-align-center"><a href="">Statement</a></li>
+        <li class="footer-ul text-align-center"><a href="">Sitemap</a></li>
+      </ul> 
+    </div>
   </div>
 </footer>
-
 <script>
 let vidname = document.querySelector("#title").textContent
 
