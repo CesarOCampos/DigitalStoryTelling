@@ -2,7 +2,7 @@
   "name": "DigitalStorytellingWebsite",
   "version": "1.0.0",
   "description": "- Make sure NPM is installed\r   - package.json contains all the dependencies \r   - After cloning the repository just do `npm install` in the terminal or cmd in the project directory. This should install all the dependencies for this project. \r   - You will also need Nodemon, which allows you to run and test your application. \r     - Use this command to install Nodemon: `npm install -g nodemon`",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
