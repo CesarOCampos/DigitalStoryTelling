@@ -36,13 +36,13 @@ router.get("/", (req,res) => {
 
 
 
-router.get('/profile',ensureAuthenticated, (req, res) => {
-	// res.render('profile', {
-	// 	name: req.user.name,
-	// 	email: req.user.email,
-	// })
-	res.render('profile')
-})
+// router.get('/profile',ensureAuthenticated, (req, res) => {
+// 	// res.render('profile', {
+// 	// 	name: req.user.name,
+// 	// 	email: req.user.email,
+// 	// })
+// 	res.render('profile')
+// })
 
 
 router.get('/videos',ensureAuthenticated, (req, res) => {
