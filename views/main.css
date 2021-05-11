@@ -12,7 +12,7 @@ html, body{
 
 .nav-background{
 	/*background: #777DA7;*/
-	background-color: #C1C3D7;
+	background-color: #DE6449;
 }
 
 .nav-main{
@@ -23,10 +23,11 @@ html, body{
 	padding-bottom: 4px;
 	padding-right: 7px;
 	padding-left: 7px;
+	font-size: 20px;
 }
 
 ul a.nav-main:hover {
-	background: #9094B6;
+	background: #F6D3CB;
 	padding-top: 4px;
 	padding-bottom: 4px;
 	padding-right: 7px;
@@ -69,18 +70,23 @@ ul a.nav-main:hover {
 /*Page Gray*/
 
 .segment{
-	background-color: #C1C3D7;
+	background-color: #FBEBD8;
 	height: 400px;
 }
 
+.segment-img{
+	background-color: #FBEBD8;
+	height: 800px;
+}
+
 .segment-one{
-	background-color: #C1C3D7;
+	background-color: #FBEBD8;
 	height: 400px;
 }
 
 .segment-red{
 	/*background-color: #C1C3D7;*/
-	background-color: #777DA7;
+	background-color: #E53C38;
 
 	/*height: 400px;*/
 }
@@ -95,7 +101,7 @@ ul a.nav-main:hover {
 }
 
 body{
-	background-color: #C1C3D7;
+	background-color: #FBEBD8;
 }
 
 /*Buttons*/
@@ -129,14 +135,14 @@ body{
 
 /*CARDS*/
 .card{
-	background-color: #B8B8FF;
+	background-color: #F79D84;
 	text-decoration: none;
 	font-family: 'Poppins', sans-serif;
 	font-weight: lighter;
 }
 
 .py{
-	background-color: #9381FF;
+	background-color: #59CD90;
 	text-decoration: none;
 	font-family: 'Poppins', sans-serif;
 	font-weight: bold;

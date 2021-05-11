@@ -39,12 +39,15 @@
 }
 
 .script-box{
-  background: #9094B6;
+  background: #E53C38;
+  border-radius: 20px;
 }
 
 .exercise{
-  background: #9094B6;
-  width: 500px;
+  background: #E53C38;
+  width: 700px;
+  border-radius: 20px;
+  height: auto;
 }
 
 @media only screen 
