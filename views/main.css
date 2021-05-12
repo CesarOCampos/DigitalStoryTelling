@@ -74,6 +74,11 @@ ul a.nav-main:hover {
 	height: 400px;
 }
 
+.segment-index{
+	background-color: #FBEBD8;
+	height: 900px;
+}
+
 .segment-img{
 	background-color: #FBEBD8;
 	height: 800px;

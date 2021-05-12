@@ -31,7 +31,11 @@ function getexercise(exercise){
 // console.log(getscript(__dirname + '/video1.txt'))
 
 router.get("/", (req,res) => {
-	res.render('index')
+	if(req.user){
+		res.redirect('/videos')
+	}else{
+		res.render('index')
+	}
 })
 
 
@@ -86,6 +90,12 @@ router.get('/videos/:videoname', ensureAuthenticated, (req,res) => {
 		res.render('videopage', {heading: vidname, videolink: "https://www.youtube.com/embed/OaK24pcfNZs", time: vidstart, script: getscript('video4.txt'), exercise: getexercise('exercise4.txt')})
 	}else if(vidname == "video5"){
 		res.render('videopage', {heading: vidname, videolink: "https://www.youtube.com/embed/PA3kicE2I7g", time: vidstart, script: getscript('video5.txt'), exercise: getexercise('exercise5.txt')})
+	}else if(vidname == "video6"){
+		res.render('videopage', {heading: vidname, videolink: "https://www.youtube.com/embed/oqMZJALlOko ", time: vidstart, script: getscript('video6.txt'), exercise: getexercise('exercise6.txt')})
+	}else if(vidname == "video7"){
+		res.render('videopage', {heading: vidname, videolink: "https://www.youtube.com/embed/gEAhVKKm7WA", time: vidstart, script: getscript('video7.txt'), exercise: getexercise('exercise7.txt')})
+	}else if(vidname == "video8"){
+		res.render('videopage', {heading: vidname, videolink: "https://www.youtube.com/embed/4AEZNAFoxfU", time: vidstart, script: getscript('video8.txt'), exercise: getexercise('exercise8.txt')})
 	}else{
 
 	// Vidname is the route

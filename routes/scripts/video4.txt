@@ -1,22 +1,22 @@
-*Python and Regina lounging in the living room, watching tv on the couch*
+*Tobias and Regina lounging in the living room, watching tv on the couch*
 *Regina watching tv upside down on the couch*
-⏩Regina: “I’m hungry.”
-Python: “Cool, me too! What do you want to eat?”
+Regina: “I’m hungry.”
+Tobias: “Cool, me too! What do you want to eat?”
 Regina: “I’m down for anything!”
-Python: “How about a burger?”
+Tobias: “How about a burger?”
 Regina: “Nah, nothing that heavy…”
-Python: “Okay, how about a salad?!”
+Tobias: “Okay, how about a salad?!”
 Regina: “I’m not really feeling a salad either…”
-Python: “Oh, I know! How about sushi?”
+Tobias: “Oh, I know! How about sushi?”
 Regina: “Nah, I need something heavier…”
-*Frame zooms in on Python’s face, who is slowly becoming unamused*
+*Frame zooms in on Tobias’s face, who is slowly becoming unamused*
 *Flash forward 30 minutes into the future with little to no progress made*
-Python: “Ugh, how about spaghetti… I know you like spaghetti!”
+Tobias: “Ugh, how about spaghetti… I know you like spaghetti!”
 Regina: “Ehh… it’s just too saucy right now for me. I don’t want anything too spaghetti-like.”
-*Python face palms with his tail*
-Python: “Alright, how about this. YOU pick!”
+*Tobias face palms with his tail*
+Tobias: “Alright, how about this. YOU pick!”
 Regina: “I’m down for anything!”
-*Python’s soul leaves body as Regina continues to nonchalantly watch tv upside down*
+*Tobias’s soul leaves body as Regina continues to nonchalantly watch tv upside down*
 *Scene pauses, and narrator interjects*
 Narrator: “Maybe we can help out Tobias here... 
 Like other programming languages, Python, uses “If statements” to tell the computer that, if this happens, then do this! These are known as conditional statements and they control the flow of the program. These ‘if statements’ can be as easy as “if this is bigger than that, then do this!” or “if this is false, then do this, else do that!”.
@@ -36,15 +36,15 @@ We can add an else at the end, meaning if the ‘if statement’ is not true, th
 ----add an if-else, if regina is not hungry, don’t say anything and wait until she finally picks on her own------
 *camera goes back to Regina*
 Regina: “You know what? I am hungry!”
-Python raises an eyebrow
+Tobias raises an eyebrow
 Regina comes back with a peanut butter and jelly sandwich
-Python looks shocked
+Tobias looks shocked
 Regina: “What’s with that look?” 
-Regina hands Python a sandwich
+Regina hands Tobias a sandwich
 Regina: “I made you one too!”
-Python: “Really? After all this trouble?”
+Tobias: “Really? After all this trouble?”
 Regina: “I was hungry so I ate, duh! And now that I’m not hungry, let’s watch some TV!”
-*Python sighs*
-Python: “Fine, fine.”
+*Tobias sighs*
+Tobias: “Fine, fine.”
 END
 Focus is back on the TV for exercises
