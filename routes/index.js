@@ -83,7 +83,9 @@ router.get('/videos/:videoname', ensureAuthenticated, (req,res) => {
 	}else if(vidname == "video3"){
 		res.render('videopage', {heading: vidname, videolink: "https://www.youtube.com/embed/5fDdWR4e80k", time: vidstart, script: getscript('video3.txt'), exercise: getexercise('exercise3.txt')})
 	}else if(vidname == "video4"){
-		res.render('videopage', {heading: vidname, videolink: "https://www.youtube.com/embed/5fDdWR4e80k", time: vidstart, script: getscript('video4.txt'), exercise: getexercise('exercise4.txt')})
+		res.render('videopage', {heading: vidname, videolink: "https://www.youtube.com/embed/OaK24pcfNZs", time: vidstart, script: getscript('video4.txt'), exercise: getexercise('exercise4.txt')})
+	}else if(vidname == "video5"){
+		res.render('videopage', {heading: vidname, videolink: "https://www.youtube.com/embed/PA3kicE2I7g", time: vidstart, script: getscript('video5.txt'), exercise: getexercise('exercise5.txt')})
 	}else{
 
 	// Vidname is the route
