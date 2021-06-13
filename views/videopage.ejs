@@ -40,6 +40,7 @@
         </div>
         <div class="video-div margin-bottom-xl"> 
         <button class="margin-top-xl padding-xl video-save nav-button" type="submit" id="test"> Save Video </button>
+        <p class="underline"><strong>Please wait 10 seconds before pressing the save button.</strong></p>
              <div class="container">
           <h1 class="padding-top-m poppins">Video Script</h1>
               <div class="script-box padding-xl box-shadow-xl">
@@ -159,8 +160,13 @@ let n = document.querySelector("#test")
 // n.addEventListener('click', (e) => {
 //   console.log("test")
 // })
-
 n.addEventListener('click', (e) => {
+
+e.target.disabled = true
+setTimeout(() => {
+  e.target.disabled = false
+}, 10000)
+
 
 console.log(player.playerInfo.currentTime)
 vidtime.push(player.playerInfo.currentTime)
