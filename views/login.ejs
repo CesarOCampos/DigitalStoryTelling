@@ -1,0 +1,28 @@
+<div class="container login-div">
+    <div class="login-card border-radius box-shadow-m">
+      <h1 class="poppins text-align-center">Login</h1>
+        <div>
+            <form action="/users/login" method="POST">
+              <% if (error == "[]") { %>
+             <p> </p>
+              <% } else {%> 
+             <p> <%= error.replace('"', " ").replace('"', " ") %></p>
+              <% }%> 
+  <p class="field">
+    <label class="pop" for="form-simple-email">Email</label>
+    <input class="poppins" type="email" id="email" name="email" placeholder="Enter Email" />
+  </p>
+  <p class="field">
+    <label class="pop" for="form-simple-password">Password</label>
+    <input class="poppins" type="password" id="password" name="password" placeholder="Enter Password" />
+  </p>
+  <p class="field">
+    <button type="submit" class="nav-button">Submit</button>
+    <a style="font-weight: bold; font-size: 20px" class="padding-left-m pop" href="/users/register">Or Regsiter</a>
+  </p>
+
+        </form>
+        </div>
+    </div> 
+  </div>
+    

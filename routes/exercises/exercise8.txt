@@ -1,0 +1,13 @@
+Social Media Comments
+Create a class called Comment, Each comment should have the following attributes: 
+User name - the username of the person who created the comment ( like “Lola”)
+Text - The actual comment itself (like “I love coding”)
+Likes -  The number of likes the comment has. (The default value should be 0)
+
+Answer:
+
+class Comment():
+   def __init__(self, username, text, likes=0):
+       self.username = username
+       self.text = text
+       self.likes = likes

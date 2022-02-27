@@ -1,0 +1,67 @@
+.video-card{
+	background-color: #B8B8FF;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	font-weight: lighter;
+}
+
+.video-div{
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.programming{
+	margin-top: 1100px;
+  margin-bottom: 100px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.video{
+	width: 800px;
+  height: 500px;
+}
+
+.text-underline{
+  text-decoration: underline;
+}
+
+.video-save{
+  border: none;
+  font-size: 21px;
+}
+
+.video-save:hover{
+  background: #9094B6;
+  text-decoration: underline;
+}
+
+.script-box{
+  background: #E53C38;
+  border-radius: 20px;
+}
+
+.exercise{
+  background: #E53C38;
+  width: 700px;
+  border-radius: 20px;
+  height: auto;
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+  	.programming{
+  		display: none;
+  	}
+  	.video{
+  		width: 300px;
+  		height: 200px;
+  		margin-right: 20px;
+  		margin-left: 20px;
+  	}
+}
+

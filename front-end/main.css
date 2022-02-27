@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+:root {
+  --main-bg-color: #6798d9;
+  --second: #674144;
+  --third: #dbe5f2;
+  --fourth: #cda053;
+  --fifth: #a2caeb;
+  --sixth: #18747c;
+  --seventh: #647692;
+  --eight: #a1b5c5;
+  --ninth: #414474;
+  --tenth: #bc7c9c;
+}
+
+.float-right{
+	float:right;
+}
+
+nav a{
+	font-weight: bold;
+}
+
+nav{
+	background: #18747c;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+body{
+	background: #e3d0b9;
+	height: 100%;
+	/*margin: 0;*/
+}
+
+.nav-button{
+	background: #cda053;
+	font-size: 16px;
+	border: solid;
+	border-color: #1D3557;
+	border-width: 2px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 25px;
+	font-family: Inter;
+	/*color: white;*/
+}
+
+
+
+/**/
+.top-margin{
+	margin-top: 100px;
+}
+/**/
+
+/* */
+
+.segmentcolor{
+	background-color: #18747c;
+}
+
+.segmentred{
+	background-color: #18747c;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.video-info{
+	background-color: #18747c;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.segment{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	width: 100%;
+}
+
+.main-heading{
+	font-size: 90px;
+	font-family: Inter;
+	margin-top: 100px;
+}
+
+.video-heading{
+		font-size: 90px;
+	font-family: Inter;
+
+}
+
+.get-started{
+	background: #cda053;
+	font-size: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 25px;
+	padding-bottom: 40px;
+	font-family: Inter;
+}
+
+ul{
+	list-style: none;
+}
+
+.align-list{
+	padding-right: 40px;
+}
+
+.inter{
+	font-family: Inter;
+}
+
+.login-label{
+	font-size: 25px;
+}
+
+.login-button{
+	background: #6D9DC5;
+	font-size: 16px;
+	border: none;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 25px;
+	font-family: Inter;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.flexbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login{
+	width: 400px;
+}
+
+.vid-card{
+	width: 250px;
+}
+
+.flex-cards{
+ display: flex;
+  flex-wrap: wrap;
+  padding-left: 25px;
+  align-content: space-between;
+}
+
+.flex-cards-center{
+	 display: flex;
+  padding-left: 25px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.margin-l{
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+.nav-user{
+	font-size: 18px;
+	font-family: Inter;
+	padding-top: 5px;
+	padding-bottom: 7px;
+}
+
+.admin{
+	font-size: 20px;
+}
+
+.main-h{
+	font-size: 70px;
+}
+
+.script-div{
+	height: 200px;
+	overflow-y: scroll;
+}
+
+.video-info-script{
+	background: #FF6663;
+	color: white;
+}
+
+.card-color{
+	background: #a2caeb;
+}

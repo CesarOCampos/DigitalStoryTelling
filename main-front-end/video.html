@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Page Title -->
+    <title>turretcss</title>
+
+    <!-- turretcss CSS -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/turretcss/dist/turretcss.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="videos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  </head>
+  <body>
+
+    <nav class=" nav-background padding-xs nav-inline">
+  <ul>
+    <li>
+      <a class="nav-main border-radius" href="/videos">Videos</a>
+    </li>
+    <li>
+      <a class="nav-main border-radius" href="/profile">Profile</a>
+    </li>
+    
+    <li class="nav-right">
+      <a class="nav-button border-radius" href="/users/logout">Signout</a>
+    </li>
+  </ul>
+</nav>
+
+<main>
+  <!-- 
+  <section>
+    <div class="segment flex flex-justify-center">
+
+    
+        <h1 class="heading padding-left-xl">Python Programming Videos</h1>
+
+    </div>  
+
+  </section -->
+
+    <section>
+    <div class="segment-one padding-top-xl">
+        <h1 class="heading-s text-align-center">Video-1 Getting Started with Python</h1>
+        <div class="video-div">
+          <iframe class="video" id="video" src="<%= videolink %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button class="margin-top-xl padding-xl video-save nav-button" type="submit" id="test"> Save Video </button>
+
+        </div>
+
+    </div>
+    </section>
+
+
+<section>
+    <div class="segment padding-top-xl programming ">
+        <h1 class="pop text-align-center">Python Interpreter</h1>
+        <iframe src="https://trinket.io/embed/python" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    </div>
+</section>
+
+
+
+    <section>
+      <div class="container margin-bottom-xl margin-top-xl margin-left-l">
+        <h1 class="video-heading hidden" id="title"><%= heading %></h1>
+     </div> 
+    </section>
+
+<footer>
+  <div class="footer segment-red box margin-top-m padding-top-m">
+    
+    <div class="flex flex-column padding-right-xl">
+
+      <ul class="footer-ul">
+        <li class="footer-ul text-align-center"><h1 class="poppins">About</h1></li>
+        <li class="footer-ul text-align-center"><a href="">UH</a></li>
+        <li class="footer-ul text-align-center"><a href="">Statement</a></li>
+        <li class="footer-ul text-align-center"><a href="">Sitemap</a></li>
+      </ul> 
+    </div>
+  </div>
+</footer>
+
+</main>
+
+
+  </body>
+</html>
