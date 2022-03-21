@@ -34,7 +34,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash())
 
-PORT = process.env.PORT || 5000
+PORT = process.env.PORT || 3001
 
 app.listen(PORT, () => {
 	console.log("Server started")
