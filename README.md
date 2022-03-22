@@ -1,38 +1,21 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Next.js + Tailwind CSS Example
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## Deploy your own
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
-# DigitalStorytellingWebsite
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
 
-# Install Dependencies
-  - Make sure NPM is installed
-  - package.json contains all the dependencies 
-  - After cloning the repository just do `npm install` in the terminal or cmd in the project directory. This should install all the dependencies for this project. 
-  - You will also need Nodemon, which allows you to run and test your application. 
-    - Use this command to install Nodemon: `npm install -g nodemon`
+## How to use
 
-# Run the server
-  - To run the website, do `nodemon app.js` in the terminal. Express will serve `App.js` on localhost. 
-  - Go to URL `localhost:5000` on your browser. 5000 is the default port to run the website locally.
-  
-  - You should see 'Hello World!' this means your project is set up! 
-  
-# Project Reference
-  - This is the video I used to set up this project. It focuses on login, registration, sessions, templating.  
-    - https://www.youtube.com/watch?v=6FOq4cUdH8k
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+
+```bash
+npx create-next-app --example with-tailwindcss with-tailwindcss-app
+# or
+yarn create next-app --example with-tailwindcss with-tailwindcss-app
+```
+
+Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
