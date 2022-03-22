@@ -4,81 +4,64 @@ import Image from 'next/image'
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div>
+      <nav className="nav-background" id="top"> 
+    <div className="nav-sections">
+        <a className="nav-spacing" href="videos">Videos</a>
+        <a className="nav-spacing" href="#About">About</a>
+    </div>
+    <div className="nav-sections">
+        <a className="nav-spacing" href="#">Login</a>
+        <a className="nav-spacing" href="#">Register</a>
+    </div>
+</nav>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
+<section className="homepage-background pb-10">
+<img src="../media/image.png" alt="title image" className="image-center "/>
+    <div className="title-layout"> Learn to Program with Python</div>
+    <div className="homepage-intro-text">Welcome! Start learning Python through watching videos and practicing code all in the browser! Just simply register your account, login and start watching videos. These are not regular tutorials, they teach you in a easy to understand and fun story-like way.</div>
 
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
+    <div className="button-layout">
+        <a  className="button-style bg-[#D5573B] mr-2" href="videos"><button className="button-style">Register</button></a>
+        <a  className="button-style bg-[#6AB487] ml-2" href="videos"><button className="button-style">Login</button></a>
+</div>
+</section>
 
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
+<section className="bg-[#E53C38] pb-20">
+    <div className="title-layout">Programming Resources</div>
+    <div className="text-layout">Programming Tools to get you started</div>
+    
+    <div className="button-layout pb-6">
+        <a  className="button-style bg-[#59CD90] m-2 " href="https://www.python.org/"><button className="button-style">Python</button></a>
+    </div>
 
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
+    <div className="button-layout">
+        <a  className="button-style bg-[#F79D84] m-2" href="https://www.sublimetext.com/"><button className="button-style">Sublime text</button></a>
+        <a  className="button-style bg-[#F79D84] m-2" href="https://code.visualstudio.com/"><button className="button-style">VS Code</button></a>
+        <a  className="button-style bg-[#F79D84] m-2" href="https://www.jetbrains.com/pycharm/"><button className="button-style">Pycharm</button></a>
+        <a  className="button-style bg-[#F79D84] m-2" href="https://developer.apple.com/xcode/"><button className="button-style">XCode- For Mac</button></a>
+    </div>
+</section>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
+<section className="homepage-background">
+    <div className="title-layout" id="About">About</div>
+    <img src="../media/uh.png" alt="title image" className="uh-image-center"/>
+    <div className="text-layout">This project was created by team codeTogether for COSC 4397:Consulting Clinic under the supervision of Dr.Rizk at the University of Houston, Texas.</div>
+    <div className="names-text-layout">Team Leaders: Ashley Odstrcil and Loveleen Thomas</div>
+    <div className="names-text-layout">Team Members:</div>
+    <div className="names-text-layout">Hussein Alfartosy</div>
+    <div className="names-text-layout">Tarun Appannagari</div>
+    <div className="names-text-layout">Juanita Correa</div>
+    <div className="names-text-layout">Sonny Ha</div>
+    <div className="names-text-layout">Lena Luc</div>
+    <div className="names-text-layout">Annabella Tao</div>
+    <div className="names-text-layout">Hima Vadakekara</div>
+    <div className="names-text-layout">Rozhin Zayen</div>
+</section>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </a>
-      </footer>
+<div className="footer">
+    <a className="footer-text" href="#top">Go to top of page</a>
+</div>
     </div>
   )
 }
