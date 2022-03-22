@@ -1,0 +1,92 @@
+.nav-background{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #E53C38;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-sections{
+    display: flex;
+}
+
+.nav-spacing{
+    padding: 13px;
+}
+
+/*Home-page CSS*/
+
+.homepage-background{
+    background-color: #fbebd8;
+}
+
+.homepage-intro-text{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.title-layout{
+    text-align: center;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 150%;
+    padding: 40px;
+}
+
+.text-layout{
+    text-align: center;
+    padding-bottom:40px;
+}
+
+.names-text-layout{
+    text-align: center;
+    padding-bottom:15px;
+}
+
+.button-layout{
+    display: flex;
+    justify-content: center;
+}
+
+.button-style{
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 12px;
+    display: inline-block;
+    font-size: 17;
+}
+
+/*Footer CSS*/
+.footer{
+    display: flexbox;
+    background-color: #E53C38;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+.footer-text{
+    text-decoration: underline;
+}
+
+/*Image CSS*/
+.image-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    width: 50%;
+}
+
+.uh-image-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    width: 20%;
+}

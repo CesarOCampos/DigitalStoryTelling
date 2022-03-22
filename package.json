@@ -1,32 +1,23 @@
 {
-  "name": "DigitalStorytellingWebsite",
-  "version": "1.0.0",
-  "description": "- Make sure NPM is installed\r   - package.json contains all the dependencies \r   - After cloning the repository just do `npm install` in the terminal or cmd in the project directory. This should install all the dependencies for this project. \r   - You will also need Nodemon, which allows you to run and test your application. \r     - Use this command to install Nodemon: `npm install -g nodemon`",
-  "main": "app.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TarunApp/DigitalStorytellingWebsite.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "connect-flash": "^0.1.1",
-    "ejs": "^3.1.5",
-    "express": "^4.17.1",
-    "express-ejs-layouts": "^2.5.0",
-    "express-session": "^1.17.1",
-    "mongoose": "^5.11.11",
-    "passport": "^0.4.1",
-    "passport-local": "^1.0.0"
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
-  "bugs": {
-    "url": "https://github.com/TarunApp/DigitalStorytellingWebsite/issues"
-  },
-  "homepage": "https://github.com/TarunApp/DigitalStorytellingWebsite#readme",
-  "proxy": "http://localhost:5000"
+  "devDependencies": {
+    "@types/node": "17.0.4",
+    "@types/react": "17.0.38",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.5",
+    "prettier": "^2.5.1",
+    "prettier-plugin-tailwindcss": "^0.1.1",
+    "tailwindcss": "^3.0.7",
+    "typescript": "4.5.4"
+  }
 }
