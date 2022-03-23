@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import '../styles/navbar.css'
+import '../styles/login.css'
 import type { AppProps } from 'next/app'
 
 function MyApp({ Component, pageProps }: AppProps) {
