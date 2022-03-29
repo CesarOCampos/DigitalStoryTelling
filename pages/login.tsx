@@ -21,7 +21,7 @@ export default () =>
             <input className="input" type="password" placeholder="Enter Password" required></input>
             </div>
 
-         <button className="button-layout button-style bg-[#1f56ec] m-3"><a>login</a></button>
+        <button className="button-layout button-style bg-[#1f56ec] m-3" ><a href="/dashboard">login</a></button>
         </div>
 
         <div ><a>Create an account <a className="text underline" href="register">here</a></a></div>

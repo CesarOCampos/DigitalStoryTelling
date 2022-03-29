@@ -37,7 +37,7 @@ export default () =>
             <input className="input " type="password" placeholder="Retype Password" required></input>
             </div>
             
-         <button className="login-button-layout login-button-style bg-[#1f56ec] m-6"><a>register</a></button>
+          <button className="login-button-layout login-button-style bg-[#1f56ec] m-6"><a>register</a></button>
         </div>
     </form>
 </body>
