@@ -1,9 +1,14 @@
-export default () => 
+import Link from 'next/link'
+
+function login(){
+    return(
 <body className="page">
 
 <nav className="nav-background" id="top"> 
     <div className="nav-sections">
-        <a className="nav-spacing" href="/">Home</a>
+        <Link href="/">
+        <a className="nav-spacing">Home</a>
+        </Link>
     </div>
 </nav>
 
@@ -27,3 +32,7 @@ export default () =>
         <div ><a>Create an account <a className="text underline" href="register">here</a></a></div>
     </form>
 </body>
+    )
+}
+
+export default login

@@ -12,7 +12,7 @@ const Home: NextPage = () => {
     </div>
     <div className="nav-sections">
         <a className="nav-spacing" href="login">Login</a>
-        <a className="nav-spacing" href="#">Register</a>
+        <a className="nav-spacing" href="register">Register</a>
     </div>
 </nav>
 
