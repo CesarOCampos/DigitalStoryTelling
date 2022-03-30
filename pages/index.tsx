@@ -11,8 +11,8 @@ const Home: NextPage = () => {
         <a className="nav-spacing" href="#About">About</a>
     </div>
     <div className="nav-sections">
-        <a className="nav-spacing" href="#">Login</a>
-        <a className="nav-spacing" href="#">Register</a>
+        <a className="nav-spacing" href="login">Login</a>
+        <a className="nav-spacing" href="register">Register</a>
     </div>
 </nav>
 
