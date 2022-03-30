@@ -1,10 +1,14 @@
-export default () => 
+import Link from "next/link"
 
+function register(){
+    return(
 <body className="page">
 
 <nav className="nav-background" id="top"> 
     <div className="nav-sections">
-        <a className="nav-spacing" href="/">Home</a>
+        <Link href="/">
+        <a className="nav-spacing">Home</a>
+        </Link>
     </div>
 </nav>
 
@@ -41,3 +45,7 @@ export default () =>
         </div>
     </form>
 </body>
+    )
+}
+
+export default register
