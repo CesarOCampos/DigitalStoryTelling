@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
 .nav-background{
     display: flex;
     flex-direction: row;
-    background-color: #E53C38;
+    justify-content: space-between;
+    background-color: #fc9255f6;
     color: black;
     font-weight: bold;
-    justify-content: right;
+    font-family: "Neucha", cursive;
 }
 
 .nav-sections{
@@ -18,18 +21,22 @@
 /*Home-page CSS*/
 
 .homepage-background{
-    background-color: #fbebd8;
+   /* background-color: #71eb96ca;*/
+   background-color: rgb(92, 190, 194);
 }
 
 .homepage-intro-text{
     font-size: 20px;
     text-align: center;
     padding-bottom: 3rem;
+    font-weight: bold;
+    font-family: "Neucha", cursive;
 }
 
 .title-layout{
     text-align: center;
     font-weight: bold;
+    font-family: "Neucha";
     font-style: normal;
     font-size: 150%;
     padding: 40px;
@@ -43,6 +50,7 @@
 .names-text-layout{
     text-align: center;
     padding-bottom:15px;
+    
 }
 
 .button-layout{
@@ -57,24 +65,62 @@
     padding-top: 8px;
     padding-bottom: 8px;
     border-radius: 12px;
+
     display: inline-block;
     font-size: 17;
+    
 }
 
 /*Footer CSS*/
 .footer{
     display: flexbox;
-    background-color: #E53C38;
-    padding: 20px;
-    justify-content: center;
+    background-color: #fc9255f6;
+    padding: 40px;
+    justify-content:space-evenly;
     display: flex;
+    font-style: bolder;
+    font-family: "Neucha", cursive;
 }
 
-.footer-text{
+.footer-text{   
     text-decoration: underline;
+    padding-left: 50px;
+    text-align: center;   
+}
+
+.uh-image-center{
+    align-items: center;
+}
+.Designed-by{
+    padding-bottom: 5%;   
+    text-align:right;
+}
+
+.Contact-Us{
+    padding-top: 20%;
+    text-align: left;
+}
+
+.Contact info{
+    margin-top: 30px;
+    text-align: left;
+}
+
+.address{
+    padding-top: 40%;
+    text-align: left;
+}
+.add2{
+    padding-top: 50%;
+    text-align: left;
+}
+.add3{
+    padding-top: 60%;
+    text-align: left;
 }
 
 /*Image CSS*/
+
 .image-center{
     display: block;
     margin-left: auto;
