@@ -5,3 +5,5 @@ function dashboard() {
     </h1>
   )
 }
+
+export default dashboard
