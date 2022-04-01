@@ -7,7 +7,7 @@ function login(){
 <nav className="nav-background" id="top"> 
     <div className="nav-sections">
         <Link href="/">
-        <a className="nav-spacing">Home</a>
+          <a className="nav-spacing">Home</a>
         </Link>
     </div>
 </nav>
@@ -26,7 +26,9 @@ function login(){
             <input className="input" type="password" placeholder="Enter Password" required></input>
             </div>
 
-         <button className="button-layout button-style bg-[#1f56ec] m-3"><a>login</a></button>
+            <button className="button-layout button-style bg-[#1f56ec] m-3" >
+              <Link href="/dashboard">login</Link>
+            </button>
         </div>
 
         <div ><a>Create an account <a className="text underline" href="register">here</a></a></div>

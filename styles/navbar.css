@@ -1,10 +1,10 @@
 .nav-background{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     background-color: #E53C38;
     color: black;
     font-weight: bold;
+    justify-content: right;
 }
 
 .nav-sections{

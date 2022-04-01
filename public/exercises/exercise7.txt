@@ -1,0 +1,77 @@
+Step 1: We will be using same problem as Video 5 Exercise #2. If you would like to use the same file from Video 5 Exercise #2, you can skip over Step 1. If not, please create a duplicate file of BankATM.py from Video 5 Exercise #2.
+
+Step 2 - Creating a function
+We are going to create a function to calculate and update the total amount in the user’s bank account. Since we already have our code to calculate the amount, we will be modifying that into a function.
+Type into your Python File:
+def calculateTotal(lists):
+    total=0
+    i=0
+    while len(lists)!=i:
+        action, amt = lists[i]
+        if action == "deposited":
+            total+=amt
+        elif action == "fee":
+            total-=amt
+        else:
+            total-=amt
+        i+=1
+    return total
+
+Step 3: Print to the Screen 
+We are making a Bank ATM, but how will the reader see it? We must send, or “print” our messages to the screen so that the reader can see the Bank ATM, using the print() function.
+Type into the Python file:
+    if user_input is 1:
+    	print("Bank summary:\n",listoftuple)
+    elif user_input is 2:
+    	print("Total amount in bank: ",calculateTotal(listoftuple))
+    elif user_input is 3:
+    	num =int(input("Enter amount: "))
+    	listoftuple.append(("deposited", num))
+   	 print("Updated bank summary:\n",listoftuple)
+    	print("Updated total amount in bank: ",calculateTotal(listoftuple))
+    else:
+    	num =int(input("Enter amount: "))
+    	listoftuple.append(("withdraw", num))
+    	print("Updated bank summary:\n",listoftuple)
+    	print("Updated total amount in bank: ",calculateTotal(listoftuple))
+
+ Words will be sent to the screen as they appear in the quotes using this command.
+See your progress: 
+Save then click Run and  Run Module 
+Now you should see your Bank ATM printed out here.
+
+Exercise #2-
+Step 1: Create a new File
+	Open Main Menu and open Python 3 (IDLE)
+	Click File and New File
+Save the file as  Sorting.py by clicking File and Save As  then choose Home>pi
+
+Step 2 - Creating a function
+We are going to create a function to sort and order the numbers in a list.
+Type into your Python File:
+	def sort(numlist):
+    		n=len(numlist)
+   		 for i in range(n-1):
+       	 	 	for j in range(0, n-i-1):
+            			if numlist[j] > numlist[j+1] :
+                				temp = numlist[j]
+                				numlist[j] = numlist[j+1] 
+                				numlist[j+1] = temp
+
+Step 3 - Create a list of numbers
+We need to create a list of numbers so our function can sort. Feel free to put any numbers in the list.
+Type into the Python file:
+	listofnum=[2,5,4,26,42,15,0,81,33]
+
+Step 4: Print to the Screen 
+We are making a Sorting function, but how will the reader see it? We must send, or “print” our messages to the screen so that the reader can see the result, using the print() function.
+Type into the Python file:
+sort(listofnum)
+print(listofnum)
+
+Words will be sent to the screen as they appear in the quotes using this command.
+See your progress: 
+Save then click Run and  Run Module 
+Now you should see your Bank ATM printed out here.
+Bonus: Can you guess which sort is this? 
+   Try to create a different sort method.

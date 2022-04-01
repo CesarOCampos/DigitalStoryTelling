@@ -1,0 +1,31 @@
+Step 1: Create a new File
+	Open Main Menu and open Python 3 (IDLE)
+	Click File and New File
+Save the file as  multiplicationTable.py by clicking File and Save As  then choose Home>pi
+
+# - to comment out
+
+Step 2 - Creating a list
+We are going to create a new list and store elements, separated by commas, inside of the list. 
+Type into your Python File:
+#Create your list here
+numbers=[1,2,3,4,5,6,7,8,9,10,11,12]
+
+Step 3 - Nested Loops
+We are going to create a nested loop to multiply the numbers of our list to create the multiplication table.
+Type into your Python File:
+	for i in numbers:  #iterate over the list
+    		for j in range(13): #numbers to be multiplied by
+			product=i*j
+
+Step 4: Print to the Screen 
+We are making a multiplication table, but how will the reader see it? We must send, or “print” our messages to the screen so that the reader can see the multiplication table, using the print() function.
+Type into the Python file:
+    print("Multiples of", i,":")  #add the first loop
+    print(i," x ",j," = ",product)  #add under the multiplication
+
+ Words will be sent to the screen as they appear in the quotes using this command.
+See your progress: 
+Save then click Run and  Run Module 
+Now you should see your multiplication table printed out here.
+Bonus: Can you try to create the multiplication table without the list?
