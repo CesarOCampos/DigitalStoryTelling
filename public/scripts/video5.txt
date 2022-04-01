@@ -1,0 +1,168 @@
+Scene starts as they are falling, Lola in a puzzled state
+
+Lola: You brought me here to tell me we are falling forever!!!! 
+
+Tobias: Yes! You will be here until you fully learn your lesson on loops and lists.
+
+Lola: “Listen I am already late for my class and we are going over that today, is this really necessary?”
+
+Tobias: Someone is an underachiever
+
+Lola: I am not, I just do not see the point of continuously falling in an infinite loop to learn about loops and lists it does not make any sense
+
+Tobias: Well the only way out is to code yourself out, so good luck missy, you are on your own
+
+Lola: Wait!!! I need your help!
+
+*coding screen/blackboard pops up*
+
+Tobias: Thought so, Here we have a while loop. Let’s set a boolean data type called LolaScreams and set it to true. 
+
+*types* 
+LolaScreams = True
+
+while LolaScreams:
+	print(“falling”)
+		
+	
+Tobias: Now I give you permission to scream. 
+
+Lola: Are you trying to make fun of me? Why should I?
+
+Tobias: Do you want out of here or not?
+
+Lola: okay fine. *screams* We are still falling. I do not know how this helps. 
+
+Tobias: Yes, because we are in an infinite loop and need to figure out how to get out. We never set LolaScreams to false. If we add a counter variable. Let’s say counter = 0
+
+*types on screen*
+
+LolaScreams = True
+Counter = 0
+while LolaScreams:
+	print(“falling”)
+
+Tobias: Now we need to increment the counter, let’s say when the counter equals 3 we stop falling.
+
+*types counter = counter + 1 and adds if statement with LolaScreams = false”
+
+
+LolaScreams = True
+Counter = 0
+while LolaScreams:
+	Counter = counter + 1
+	print(“falling”)
+	If counter == 3:
+		LolaScreams = False
+		print(“stop falling”)
+
+Tobias: Okay so now we will continue in this loop for three turns, which will turn off your scream and we will stop falling. Now scream again.
+
+Scene changes and they are no longer falling
+
+
+Lola: WHERE ARE WE?? I WANNA GO BACK HOME
+
+Lola sees machine and runs to it and pushes some buttons trying to get back home and accidentally turns Tobias into a bunny 
+
+*Mr. Bunny/Tobias the Bunny appears* AKA pythons shape shifts into a bunny
+
+Mr. Bunny: LOOK WHAT U DID! I AM A BUNNY NOW. 
+
+* goes to machine and takes away Lola’s voice*
+
+*takes away Lola’s voice*
+
+Mr. Bunny: Anyways no time to rest, I will change myself back after you leave.
+
+Lola mouthing “what you do then” and realizes her voice is gone.
+
+Lola  silently mouthing angrily: “WHAT DID YOU DO TO ME??? AHHH”
+
+Mr. Bunny: Uhh let’s continue *awkward laugh*
+
+*Mr. Bunny cranks up his old time machine*
+
+Mr. Bunny: Okay, now we are gonna have to write some code for this thing to work. Shall we do loop?
+
+*Lola gives an unenthusiastic look*
+
+Mr. Bunny: Okay fine you can have your voice back as long as you promise to stop playing around and stop yelling. You are hurting my ears. Now if you want to get out of here you will have to be cooperative
+
+*Mr. Bunny hands Lola a piece of cheese*
+
+*Lola eats the cheese*
+
+Lola: Of course I wanna get out of here!! Let’s just go on with the for loop or whatever
+
+*Mr. Bunny types into his machine and setting changes to whatever fits the lesson*
+
+Mr. Bunny: We need a list of dates we want to travel in time to. Let’s start iterating from today’s date and iterate by 100 years shall we? To create a list we are going to create a variable called dates. Then iterate through the list
+
+dates = ["2021", "2121", "2221"]
+for x in dates:
+  print(x)
+
+Mr. Bunny: We could also do a tuple, which would look like
+
+datesTuple = ("2021", "2121", "2221")
+for x in datesTuple:
+  print(x)
+
+Mr.Bunny: Lists and tuples are both ordered and allow duplicates. The only difference between tuples and lists is that a list is changeable while a Tuple is unchangeable, which is why we are going to use a list instead. So we can time travel back in case we make any mistakes. 
+
+Lola: Umm I hope we won't make any mistakes. I would like to get back to my normal life. Anyways why are we even traveling to the year 2221. I won’t even exist by 2221.
+
+*starts teleportation process*
+Mr. Bunny: Because I needed some extra parts for my time machine and they only exist in this era, as this is the year that the time machine was invented. Speaking of which I need to make some modifications so we go to the right place. So we are going to change our for loop to a nested for loop and break out of the for loop once we reach the right time zone and place, in which we are going to Japan in the year 2221.
+dates = ["2021", "2121", "2221"]
+places = ["France", "Japan", "Russia", “Germany”]
+for x in dates:
+	for p in places:
+		if x = “2221” and p = “Japan”:
+ 		print(“We are in the year “ + x + “ in “ + p)
+		break
+
+
+Mr. Bunny: Ah yes we are here. Now i must put this blindfold on you, so you don’t screw up anything in the past that will affect the future. 
+
+Lola: This is stupid. I shouldn’t have to be here if I am not even allowed to see the future. *glumly puts on blindfold*
+
+*takes Lola to timeParts store blindfolded and purchases parts*
+
+Mr. Bunny: Ok, I got the parts now we can go. 
+
+*heads back to the lab*
+
+*replaces parts and puts in code to travel back in time*
+
+Mr. Bunny: Oh I forgot to tell you, you can take off your blindfold now.
+
+Lola: That took forever. Are we going home now? I am getting hungry
+
+Mr. Bunny: Yes, let me just input the code to get back.
+
+dates = ["2221","2021”]
+places = ["France", "Japan", "America”]
+
+notinAmerica = True
+
+while notinAmerica:
+for x in dates:
+	for p in places:
+		if x = “2021” and p = “America”:
+ 		print(“We are in the year “ + x + “ in “ + p)
+		
+*alarms go off*
+
+System screaming ERROR ERROR 
+
+Lola: What’s happening?? 
+
+Mr. Bunny: HMMm that’s weird let me check. Seems like we are stuck in an infinite loop
+
+Lola: WHAT
+
+*cuts out with screen glitching*
+
+*scratches out “Lola in LOopyLAnd” to “Lost in LOopyLAnd”
