@@ -3,7 +3,7 @@
 .nav-background{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: right;
     background-color: #fc9255f6;
     color: black;
     font-weight: bold;
@@ -21,8 +21,8 @@
 /*Home-page CSS*/
 
 .homepage-background{
-   /* background-color: #71eb96ca;*/
-   background-color: rgb(92, 190, 194);
+  /* background-color: #71eb96ca;*/
+  background-color: rgb(92, 190, 194);
 }
 
 .homepage-intro-text{
