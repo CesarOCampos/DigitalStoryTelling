@@ -1,5 +1,12 @@
 const express = require('express')
 const next = require('next')
+const {MongoClient} = require('mongodb')
+
+//database connection
+const url = 'mongodb+srv://mernstack:mernstack@cluster0.cpuxp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const client = new MongoClient(url)
+
+const dbName = 'digitalstorytelling'
 
 const port = process.env.PORT || 3000
 const dev = process.env.NODE_ENV !== 'production'
