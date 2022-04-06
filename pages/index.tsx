@@ -7,30 +7,31 @@ import snake from '../public/media/image.png'
 
 const Home: NextPage = () => {
   return (
-    <>
+    <div>
       <nav className="nav-background" id="top"> 
         <div className="nav-sections">
-        <button className="nav-spacing">
-          <Link href="login">
-            <a>Login</a>
+
+          <Link href={"./login"}>
+            <a className="nav-spacing mr-2"><button className='navbar-buttons font-bold text-lg text-black'>Login</button></a>
           </Link>
-        </button>
-        <button className="nav-spacing">
-          <Link href="register" >
-            <a className="nav-spacing">Register</a>
+          
+          <Link href={"./register"}>
+            <a className="nav-spacing ml-2"><button className='navbar-buttons font-bold text-lg text-black'>Register</button></a>
           </Link>
-        </button>
+
         </div>
       </nav>
 
       <section className="homepage-background pb-10">
+        
+        <div className='title-image-container'>
           <Image
             src={snake}
-            width={1920}
-            height={500}
-            alt="title image"
-            className="image-center "
+            layout={"responsive"}
+            alt="title Image"
           />
+        </div>
+
             <h2 className="homepage-intro-text title-layout"> Welcome!</h2>
       <div className="title-layout"> Learn to Program with Python! </div>
           <div className="homepage-intro-text">
@@ -65,7 +66,7 @@ const Home: NextPage = () => {
         <div className="title-layout" id="About">About</div>
 
     </section>
-    </>
+    </div>
   )
 };
 export default Home
