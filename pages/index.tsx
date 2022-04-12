@@ -9,17 +9,17 @@ const Home: NextPage = () => {
   return (
     <div>
       <nav className="nav-background" id="top"> 
+        
         <div className="nav-sections">
-
           <Link href={"./login"}>
-            <a className="nav-spacing mr-2"><button className='navbar-buttons font-bold text-lg text-black'>Login</button></a>
+            <a className="nav-spacing mr-4"><button className='navbar-buttons font-bold text-lg text-black'>Login</button></a>
           </Link>
           
           <Link href={"./register"}>
-            <a className="nav-spacing ml-2"><button className='navbar-buttons font-bold text-lg text-black'>Register</button></a>
+            <a className="nav-spacing mr-2"><button className='navbar-buttons font-bold text-lg text-black'>Register</button></a>
           </Link>
-
         </div>
+
       </nav>
 
       <section className="homepage-background pb-10">
@@ -69,6 +69,7 @@ const Home: NextPage = () => {
     </div>
   )
 };
+
 export default Home
 
 
