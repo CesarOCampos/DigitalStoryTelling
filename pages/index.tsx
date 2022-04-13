@@ -38,11 +38,11 @@ const Home: NextPage = () => {
       
           <div className="title-layout"> Learn to Program with Python! </div>
           
-          <div className="homepage-intro-text">
-            Start learning Python through watching videos and practicing code all in the browser!<br />
-            Just simply register your account, login and start watching videos. <br />
-            These are not regular tutorials, they teach you in a easy to understand and fun story-like way.
-          </div>
+          
+            <div className="homepage-intro-text">Start learning Python through watching videos and practicing code all in the browser!</div>
+            <div className="homepage-intro-text mt-3">Just simply register your account, login and start watching videos. </div>
+            <div className="homepage-intro-text mt-3">These are not regular tutorials, they teach you in a easy to understand and fun story-like way.</div>
+          
   </section>
 
   <section className="bg-[#fc9255f6] pb-10">
@@ -50,14 +50,14 @@ const Home: NextPage = () => {
       <div className="text-layout text-style">Programming Tools to get you started</div>
       
       <div className="button-layout pb-6">
-          <a  className="button-style bg-[#59CD90] m-2 " href="https://www.python.org/"><button className="button-style">Python</button></a>
+          <a className='mb-4' href="https://www.python.org/"><button className="buttons bg-[#59CD90]">Python</button></a>
       </div>
 
       <div className="button-layout">
-          <a  className="button-style bg-[#E62FFA] m-2" href="https://www.sublimetext.com/"><button className="button-style">Sublime text</button></a>
-          <a  className="button-style bg-[#72D8FD] m-2" href="https://code.visualstudio.com/"><button className="button-style">VS Code</button></a>
-          <a  className="button-style bg-[#F6BB80] m-2" href="https://www.jetbrains.com/pycharm/"><button className="button-style">Pycharm</button></a>
-          <a  className="button-style bg-[#FAFAAC] m-2" href="https://developer.apple.com/xcode/"><button className="button-style">XCode- For Mac</button></a>
+          <a className='ml-10' href="https://www.sublimetext.com/"><button className="buttons bg-[#E62FFA]">Sublime text</button></a>
+          <a className='ml-10' href="https://code.visualstudio.com/"><button className="buttons bg-[#72D8FD]">VS Code</button></a>
+          <a className='ml-10' href="https://www.jetbrains.com/pycharm/"><button className="buttons bg-[#F6BB80]">Pycharm</button></a>
+          <a className='ml-10' href="https://developer.apple.com/xcode/"><button className="buttons bg-[#FAFAAC]">XCode- For Mac</button></a>
       </div>
     </section>
 
