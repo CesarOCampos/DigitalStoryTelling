@@ -1,0 +1,40 @@
+/*Footer CSS*/
+
+.Footer{
+    display: flexbox;
+    background-color: #fc9255f6;
+    padding: 40px;
+    justify-content:space-evenly;
+    display: flex;
+    font-style: bolder;
+    font-family: "Neucha", cursive;
+}
+
+.footer-text{   
+    text-decoration: underline;
+    padding-left: 50px;
+    text-align: center;   
+}
+
+.uh-image-center{
+    align-items: left;
+}
+.col1{
+    padding-bottom: 5%;   
+    text-align:right;
+}
+
+.col2{
+    padding-top: 20%;
+    text-align: left;
+}
+
+.col3{
+    margin-top: 30px;
+    text-align: left;
+}
+
+.col4{
+    padding-top: 40%;
+    text-align: left;
+}

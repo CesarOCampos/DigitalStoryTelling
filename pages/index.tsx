@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import Footer from './footer'
+import Footer from './footer';
 import Link from 'next/link'
 import snake from '../public/media/image.png'
 
@@ -67,9 +67,49 @@ const Home: NextPage = () => {
 
     </section>
 
+<<<<<<< Updated upstream
         <Footer></Footer>
 
     </div>
+=======
+    <section className="Footer">
+    <img src="../media/uh.png" alt="title image" className="uh-image-center"/>
+       
+        <a className="footer-text" href="#top">Go to top of page</a>
+        
+      <div className="col1">
+          <h4>Resources</h4>
+          <ul>
+              <li><a href ="About Us"></a></li>
+              <li><a href ="Curriculum"></a></li>
+              <li><a href ="Privacy Policy"></a></li>
+          </ul>
+          </div> 
+          <div className="col2">
+          <h4>Contact Us</h4>
+          <ul>
+              <h4>Dr. Nouhad Rizk</h4>
+              <h4>2700 Calhoun Rd</h4>
+              <h4>Houston, Tx, 77070</h4>
+          </ul>
+          </div> 
+          <div className="col3">
+          <h4>Created By</h4>
+          <ul>
+              <li><a href ="Behind the Screen"></a></li>
+
+          </ul>
+          </div> 
+
+          <div className="col4">
+          <h4>Report Issues</h4>
+          <ul>
+              <li><a href ="Help"></a></li>
+         </ul>
+          </div> 
+          </section>
+    </>
+>>>>>>> Stashed changes
   )
 };
 
