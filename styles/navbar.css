@@ -25,7 +25,7 @@
 
 .homepage-background{
   /* background-color: #71eb96ca;*/
-  background-color: rgb(92, 190, 194);
+  background-color:#8fe6e6;
 }
 
 .homepage-intro-text{
@@ -166,8 +166,9 @@
 
 /*Image container*/
 .title-image-container{
-    padding: 0;
-    display: grid;
+    padding-left: 250px;
+    padding-right: 250px;
+    display:grid;
     max-width: 100%;
     height: 45vh;
     margin: auto;
