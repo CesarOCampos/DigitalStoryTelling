@@ -1,5 +1,9 @@
-.page{
+.page-color{
     background-color: aquamarine;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-size: auto;
+    border: 1px solid red;
 }
 
 .info-container{

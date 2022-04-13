@@ -1,20 +1,27 @@
+import type { NextPage } from 'next'
+import Image from 'next/image'
+import uhImage from '../public/media/uh.png'
+
 const footer = () => (
-    <div className="footer">
-    <img src="../media/uh.png" alt="title image" className="uh-image-center"/>
-        <a className="footer-text" href="#top">Go to top of page</a>
-        
-        <a className="Designed-by">Designed by: The Computer Science students of the University of Houston</a>
-        
-        
-        <section>
-    
-        <a className="Contact-Us"> Contact Us @ </a>
-        <a className="Contact info"> njrizk@uh.edu </a>
-        <a className="address"> 4800 Calhoun Rd </a>
-        <a className="add2"> Houston </a>
-        <a className="add3"> Texas, 77004 </a>
-        </section>
-    </div>
+<footer className="footer">
+    <div className='ml-3 mr-3 mt-4 pb-5' >
+          <Image
+            src={uhImage}
+            layout={"intrinsic"}
+            alt="title Image"
+          />
+        </div>
+
+    <section className="ml-3 mr-3 mt-4 font-bold text-lg">
+        <a className="">Designed by: The Computer Science students of the University of Houston</a>
+    </section>
+
+    <section className="ml-3 mr-3 mt-4 font-bold text-lg">
+        <a className=""> Contact Us @ njrizk@uh.edu </a>
+    </section>
+
+        <a className="ml-3 mr-3 mt-4 font-bold underline text-lg" href="#top">Go to top of page</a>
+</footer>
     
       );
 
