@@ -1,17 +1,16 @@
 import Link from "next/link"
+import Footer from './footer'
 
 function register(){
     return(
 <div>
     <nav className="nav-background" id="top"> 
-        <div className="nav-sections">
             <Link href={"/"}>
-            <a className="nav-spacing mr-4">Home</a>
+            <a className="nav-spacing mr-4"><button className='navbar-buttons font-bold text-lg text-black'>Home</button></a>
             </Link>
-        </div>
     </nav>
 
-    <body className="page-color">
+    <div className="page-color page-container">
         
             <form className="register-info-container">
                 <div className="title-text">Register</div>
@@ -45,7 +44,8 @@ function register(){
                  <button className="login-button-layout login-button-style bg-[#1f56ec] m-6"><a>register</a></button>
                 </div>
             </form>
-        </body>
+        </div>
+        <Footer></Footer>
 </div>
 
 )

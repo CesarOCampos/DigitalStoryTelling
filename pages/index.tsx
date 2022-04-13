@@ -27,7 +27,7 @@ const Home: NextPage = () => {
         <div className='title-image-container'>
           <Image
             src={snake}
-            layout={"responsive"}
+            layout={"intrinsic"}
             alt="title Image"
           />
         </div>
@@ -66,6 +66,9 @@ const Home: NextPage = () => {
         <div className="title-layout" id="About">About</div>
 
     </section>
+
+        <Footer></Footer>
+
     </div>
   )
 };
