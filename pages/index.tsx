@@ -8,7 +8,7 @@ import snake from '../public/media/image.png'
 const Home: NextPage = () => {
   return (
     <div>
-      <nav className="nav-background" id="top"> 
+      <div className="nav-background" id="top"> 
         
         <div className="nav-sections">
           <Link href={"./login"}>
@@ -20,35 +20,34 @@ const Home: NextPage = () => {
           </Link>
         </div>
 
-      </nav>
+      </div>
 
       <section className="homepage-background pb-10">
         
-        <div className='title-image-container'>
+        <div className='title-image-container pt-2'>
           <Image
             src={snake}
-            layout={"intrinsic"}
             alt="title Image"
+            layout={'intrinsic'}
+            height={600}
+            width={600}
           />
         </div>
 
-            <h2 className="homepage-intro-text title-layout"> Welcome!</h2>
-      <div className="title-layout"> Learn to Program with Python! </div>
+          <h2 className="homepage-intro-text title-layout"> Welcome!</h2>
+      
+          <div className="title-layout"> Learn to Program with Python! </div>
+          
           <div className="homepage-intro-text">
-            <h2>Welcome!</h2> <br />
             Start learning Python through watching videos and practicing code all in the browser!<br />
             Just simply register your account, login and start watching videos. <br />
-            These are not regular tutorials, they teach you in a easy to understand and fun story-like way.</div>
-
-      <div className="button-layout">
-        {/* <a  className="button-style bg-[#2bd154ca] mr-2" href="videos"><button className="button-style">Register</button></a>
-        <a  className="button-style bg-[#4DA2F7] ml-2" href="videos"><button className="button-style">Login</button></a> */}
-  </div>
+            These are not regular tutorials, they teach you in a easy to understand and fun story-like way.
+          </div>
   </section>
 
-  <section className="bg-[#fc9255f6] pb-20">
+  <section className="bg-[#fc9255f6] pb-10">
       <div className="title-layout">Programming Resources</div>
-      <div className="text-layout">Programming Tools to get you started</div>
+      <div className="text-layout text-style">Programming Tools to get you started</div>
       
       <div className="button-layout pb-6">
           <a  className="button-style bg-[#59CD90] m-2 " href="https://www.python.org/"><button className="button-style">Python</button></a>
@@ -62,8 +61,10 @@ const Home: NextPage = () => {
       </div>
     </section>
 
-    <section className="homepage-background">
+    <section className="homepage-background pb-10">
         <div className="title-layout" id="About">About</div>
+
+        <div className='text-center pb-8 text-style'>UH students who worked on the website:</div>
 
       <div className='about-section-center'>
         
