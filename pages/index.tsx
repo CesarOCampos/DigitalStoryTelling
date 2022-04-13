@@ -65,6 +65,45 @@ const Home: NextPage = () => {
     <section className="homepage-background">
         <div className="title-layout" id="About">About</div>
 
+      <div>
+        
+          <div className='about-section text-left'> 
+
+            <a className='text-left'>Ashley Odstrcil</a>
+            <a>Loveleen Thomas</a>
+            <a>Hussein Alfartosy</a>
+            <a>Tarun Appannagari</a>
+
+          </div>
+
+          <div className='about-section text-left'> 
+
+            <a>Juanita Correa</a>
+            <a>Sonny Ha</a>
+            <a>Lena Luc</a>
+            <a>Annabella Tao</a>
+
+          </div>
+
+          <div className='about-section'> 
+
+            <a>Hima Vadakekara</a>
+            <a>Rozhin Zayen</a>
+            <a>Santos Garcia</a>
+            <a>Cesar Campos</a>
+
+          </div>
+
+          <div className='about-section'> 
+
+            <a>Brianna McDermot</a>
+            <a>hello</a>
+            <a>he</a>
+            <a>sd</a>
+
+          </div>
+
+        </div>
 
     </section>
 

@@ -178,3 +178,7 @@
     position: relative;
     min-height: 87vh;
 }
+
+.about-section{
+    grid-row: 60px 60px;
+}
