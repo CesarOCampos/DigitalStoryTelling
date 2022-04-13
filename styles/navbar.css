@@ -180,5 +180,14 @@
 }
 
 .about-section{
-    grid-row: 60px 60px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-family: "Neucha";
+    font-size: 17px;
+}
+
+.about-section-center{
+    display: flex;
+    justify-content: space-evenly;
 }

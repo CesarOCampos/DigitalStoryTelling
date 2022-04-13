@@ -65,18 +65,18 @@ const Home: NextPage = () => {
     <section className="homepage-background">
         <div className="title-layout" id="About">About</div>
 
-      <div>
+      <div className='about-section-center'>
         
-          <div className='about-section text-left'> 
+          <div className='about-section'> 
 
-            <a className='text-left'>Ashley Odstrcil</a>
+            <a>Ashley Odstrcil</a>
             <a>Loveleen Thomas</a>
             <a>Hussein Alfartosy</a>
             <a>Tarun Appannagari</a>
 
           </div>
 
-          <div className='about-section text-left'> 
+          <div className='about-section'> 
 
             <a>Juanita Correa</a>
             <a>Sonny Ha</a>
@@ -97,10 +97,6 @@ const Home: NextPage = () => {
           <div className='about-section'> 
 
             <a>Brianna McDermot</a>
-            <a>hello</a>
-            <a>he</a>
-            <a>sd</a>
-
           </div>
 
         </div>
