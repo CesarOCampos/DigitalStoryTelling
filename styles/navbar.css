@@ -7,8 +7,8 @@
     background-color: #fc9255f6;
     color: black;
     font-weight: bold;
-    font-family: "Neucha", cursive;
-
+    font-family: "Neucha";
+    box-shadow: inset 0 -0px 6px 3px rgba(0, 0, 0, 0.503)
 }
 
 .nav-sections{
@@ -26,12 +26,13 @@
 .homepage-background{
   /* background-color: #71eb96ca;*/
   background-color:#8fe6e6;
+  box-shadow: inset 0 -0px 6px 3px rgba(0, 0, 0, 0.503)
 }
 
 .homepage-intro-text{
     font-size: 20px;
     text-align: center;
-    padding-bottom: 3rem;
+    padding-bottom: 1px;
     font-weight: bold;
     font-family: "Neucha", cursive;
 }
@@ -41,8 +42,8 @@
     font-weight: bold;
     font-family: "Neucha";
     font-style: normal;
-    font-size: 150%;
-    padding: 40px;
+    font-size: 25px;
+    padding: 20px;
 }
 
 .text-layout{
@@ -56,22 +57,7 @@
     
 }
 
-.button-layout{
-    display: flex;
-    justify-content: center;
-}
 
-.button-style{
-    font-weight: bold;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border-radius: 12px;
-    display: inline-block;
-    font-size: 17px;
-    
-}
 
 .navbar-buttons{
     display:inline-block;
@@ -80,7 +66,7 @@
     padding-left: 11px;
     padding-right: 11px;
     margin: auto;
-    border-radius: 15px;
+    border-radius: 18px;
     font-size: 17px;
     font-weight: bold;
     background-color: #2bd154ca;
@@ -97,9 +83,36 @@
   transform: translateY(4px);
 }
 
+.button-layout{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons{
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    font-size: 17px;
+    box-shadow: 2px 5px rgb(140, 65, 27);
+}
+
+.buttons:hover{
+    color: #00000075;
+}
+
+.buttons:active{
+    background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 /*Footer CSS*/
 .footer{
-    display: flex;
+    display: block;
     text-align: left;
     background-color: #fc9255f6;
     justify-content:space-evenly;
@@ -117,33 +130,6 @@
 
 .uh-image-center{
     align-items: center;
-}
-.Designed-by{
-    padding-bottom: 5%;   
-    text-align:right;
-}
-
-.Contact-Us{
-    padding-top: 20%;
-    text-align: left;
-}
-
-.Contact info{
-    margin-top: 30px;
-    text-align: left;
-}
-
-.address{
-    padding-top: 40%;
-    text-align: left;
-}
-.add2{
-    padding-top: 50%;
-    text-align: left;
-}
-.add3{
-    padding-top: 60%;
-    text-align: left;
 }
 
 /*Image CSS*/
@@ -168,13 +154,40 @@
 .title-image-container{
     padding-left: 250px;
     padding-right: 250px;
-    display:grid;
-    max-width: 100%;
-    height: 45vh;
+    justify-content: center;
+    max-width: auto;
+    max-height: auto;
+    display: flex;
     margin: auto;
+}
+
+.footer-image-container{
+    width: 120px;
+    min-height: 120px;
+    max-height: auto;
+    
 }
 
 .page-container{
     position: relative;
     min-height: 87vh;
+}
+
+.about-section{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-family: "Neucha";
+    font-size: 20px;
+}
+
+.about-section-center{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text-style{
+    font-family: "Neucha";
+    font-weight: bold;
+    font-size: 20px;
 }
