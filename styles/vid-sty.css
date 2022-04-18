@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+.vid-bg{
+    background-color: rgba(221, 197, 212, 0.837);
+    padding-bottom: 50%;
+}
+.wrapper{
+padding-left: 15cm;
+padding-top: 1cm;
+font-size: xxx-large;
+font-family: "Grape Nuts";
+font-weight: bold;
+color:rgba(29, 170, 170, 0.822);
+font-size-adjust: inherit;
+}
+
+.size-wrapper iframe{
+    position:relative;
+    border-width: 15px;
+    border-color: rgba(241, 175, 87, 0.8);
+    left: 2cm;
+    top: 1.5cm;
+    bottom: 0px;
+    float: left;
+    height: 450px;
+    width: 750px;
+}
+
+.transcript{
+    
+    margin-top: 1.5cm;
+    margin-left: 2cm;
+    border-width: 15px;
+    border-color: rgba(241, 175, 87, 0.8);
+    height: 450px;
+    width: 650px;
+}
+
+.exercises{
+    font-family: "Grape Nuts";
+    font-weight: bolder;
+    font-style:inherit;
+    font-size: xxx-large;
+    color: rgb(62, 199, 163);
+    margin-top: 2cm;
+    margin-left: 18cm;
+}
+
+.instructs{
+    height:500px;
+    font-weight: 500;
+    color: rgba(153, 114, 47, 0.734);
+    width: 700px;
+    margin-top: 10px;
+    margin-left: 12cm;
+
+}

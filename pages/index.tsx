@@ -20,6 +20,10 @@ const Home: NextPage = () => {
               <button className='navbar-buttons font-bold text-lg text-black'>Register</button>
             </a>
           </Link>
+
+          <Link href={"./dashboard"}>
+            <a className="nav-spacing mr-6"><button className='navbar-buttons font-bold text-lg text-black'>Dashboard</button></a>
+          </Link>
         </div>
       </div>
       <section className="homepage-background pb-10">
