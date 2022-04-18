@@ -121,7 +121,7 @@ function videos(){
     <p>
       We are going to create a new variable and store variables inside different data types and write our student profile there. 
       Type into your Python File:
-      //Declare Variables here
+    </div>//Declare Variables here<div>
     </p>
     <p>
       Step 3: Print to the Screen 
