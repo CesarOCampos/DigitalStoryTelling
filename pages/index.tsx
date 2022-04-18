@@ -21,9 +21,9 @@ const Home: NextPage = () => {
             </a>
           </Link>
 
-          <Link href={"./dashboard"}>
+          {/* <Link href={"./dashboard"}>
             <a className="nav-spacing mr-6"><button className='navbar-buttons font-bold text-lg text-black'>Dashboard</button></a>
-          </Link>
+          </Link> */}
         </div>
       </div>
       <section className="homepage-background pb-10">
