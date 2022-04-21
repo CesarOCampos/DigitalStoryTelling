@@ -1,10 +1,21 @@
 const express = require('express')
 const next = require('next')
-const {MongoClient} = require('mongodb')
+const { MongoClient, ServerApiVersion } = require('mongodb')
+
 
 //database connection
-const url = 'mongodb+srv://mernstack:mernstack@cluster0.cpuxp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
-const client = new MongoClient(url);
+const uri = 'mongodb+srv://mernstack:mernstack@cluster0.cpuxp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+const client = new MongoClient(uri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  serverApi: ServerApiVersion.v1,
+})
+
+client.connect((err) => {
+  const collection = client.db('test').collection('devices')
+  // perform actions on the collection object
+  client.close()
+})
 
 const dbName = '<dbname>';
 
@@ -25,3 +36,4 @@ app.prepare().then(() => {
     console.log(`> Ready on http://localhost:${port}`);
   })
 })
+

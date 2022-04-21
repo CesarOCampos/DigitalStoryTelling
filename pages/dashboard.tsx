@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import chpt1 from '../public/media/Thumbnails/chapt1.png'
+import chapter1 from '../public/media/chapt1.png'
+import Image from 'next/image'
+
 function dashboard(){
 return(
     <>
@@ -30,10 +33,10 @@ return(
       
     <a href={"./videos"}>
             <button className='vid-button'>CHAPTER 1</button> 
-            <img src="public\media\chapt1.png" width="200" height="300"></img>
+            <Image src={chapter1} alt="Chapter 1" layout="responsive" width="900" height="900"/>
           </a>
 
-          <a href={"./video2"}>
+          {/* <a href={"./video2"}>
             <button className='vid-button'>CHAPTER 2</button>
             <img src="chapt2.png" width="200" height="300"></img> 
           </a>
@@ -68,8 +71,9 @@ return(
 
           <a href={"./video8"}>
             <button className='vid-button'>CHAPTER 8</button>
-            <img src="chapt8.png" width="200" height="300"></img>
+            <img src="chapt8.png" width="200" height="300"></img> 
           </a>
+*/}
     </section>   
     </div>
     </>
