@@ -1,25 +1,9 @@
 import Link from 'next/link'
 import chpt1 from '../public/media/Thumbnails/chapt1.png'
-function dashboard(){
+function Dashboard(){
 return(
     <>
-    <nav className="nav-background" id="top"> 
-        
-        <div className="nav-sections">
-          <Link href={"./login"}>
-            <a className="nav-spacing mr-4"><button className='navbar-buttons font-bold text-lg text-black'>Login</button></a>
-          </Link>
-          
-          <Link href={"./register"}>
-            <a className="nav-spacing mr-2"><button className='navbar-buttons font-bold text-lg text-black'>Register</button></a>
-          </Link>
-
-          <Link href={"./videos"}>
-            <a className="nav-spacing mr-6"><button className='navbar-buttons font-bold text-lg text-black'>Videos</button></a>
-          </Link>
-        </div>
-
-      </nav>
+    
     <div className="video-lessons">Welcome to your story log</div>
     
     <div className = "Header"><h4>Please choose a Chapter</h4></div>
@@ -76,4 +60,4 @@ return(
 )
 }
 
-export default dashboard
+export default Dashboard

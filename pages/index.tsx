@@ -1,30 +1,12 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import Footer from './footer';
 import Link from 'next/link'
 import snake from '../public/media/image.png'
 
 const Home: NextPage = () => {
   return (
     <div>
-      <div className="nav-background" id="top"> 
-        
-        <div className="nav-sections">
-          <Link href={"./login"}>
-            <a className="nav-spacing mr-4"><button className='navbar-buttons font-bold text-lg text-black'>Login</button></a>
-          </Link>
-          
-          <Link href={"./register"}>
-            <a className="nav-spacing mr-2"><button className='navbar-buttons font-bold text-lg text-black'>Register</button></a>
-          </Link>
-
-          <Link href={"./dashboard"}>
-            <a className="nav-spacing mr-6"><button className='navbar-buttons font-bold text-lg text-black'>Dashboard</button></a>
-          </Link>
-        </div>
-
-      </div>
 
       <section className="homepage-background pb-10">
         
@@ -108,7 +90,7 @@ const Home: NextPage = () => {
 
     </section>
 
-        <Footer></Footer>
+
 
     </div>
   )

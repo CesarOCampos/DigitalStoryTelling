@@ -2,22 +2,7 @@ import Link from 'next/link'
 function videos(){
     return(
         <>
-        <nav className="nav-background" id="top"> 
         
-        <div className="nav-sections">
-          <Link href={"./login"}>
-            <a className="nav-spacing mr-4"><button className='navbar-buttons font-bold text-lg text-black'>Login</button></a>
-          </Link>
-          
-          <Link href={"./register"}>
-            <a className="nav-spacing mr-2"><button className='navbar-buttons font-bold text-lg text-black'>Register</button></a>
-          </Link>
-
-          <Link href={"./dashboard"}>
-            <a className="nav-spacing mr-6"><button className='navbar-buttons font-bold text-lg text-black'>Dashboard</button></a>
-          </Link>
-        </div>
-    </nav>
 
 <div className='vid-bg'>
     <div className='wrapper'>
@@ -125,7 +110,7 @@ Teacher: “Very good!
  <p>
  We are going to create a new variable and store variables inside different data types and write our student profile there. 
  Type into your Python File:
-//Declare Variables here
+Declare Variables here
 </p>
 
 
