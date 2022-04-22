@@ -1,5 +1,14 @@
 import Link from 'next/link'
 import chpt1 from '../public/media/Thumbnails/chapt1.png'
+import Image from 'next/image'
+import thumb1 from '../public/media/chapt1.png'
+import thumb2 from '../public/media/chapt2.png'
+import thumb3 from '../public/media/chapt3.png'
+import thumb4 from '../public/media/chapt4.png'
+import thumb5 from '../public/media/chapt5.png'
+import thumb6 from '../public/media/chapt6.png'
+import thumb7 from '../public/media/chapt7.png'
+import thumb8 from '../public/media/chpt8.png'
 function Dashboard(){
 return(
     <>
@@ -13,47 +22,113 @@ return(
     <section className="chpts-1-4">
       
     <a href={"./videos"}>
-            <button className='vid-button'>CHAPTER 1</button> 
-            <img src="public\media\chapt1.png" width="200" height="300"></img>
-          </a>
+    <button className='vid-button'>CHAPTER 1</button> 
+    < div className='thumbnails'>
+    <Image 
+     src={thumb1}
+     alt="intro"
+     layout={'intrinsic'}
+     height={300}
+     width={300}
+  />
+  </div>
+  </a>
 
-          <a href={"./video2"}>
-            <button className='vid-button'>CHAPTER 2</button>
-            <img src="chapt2.png" width="200" height="300"></img> 
-          </a>
+<a href={"./video2"}>
+  <button className='vid-button'>CHAPTER 2</button>
+  < div className='thumbnails'>
+  <Image
+  src={thumb2}
+  alt="chpt2"
+  layout={'intrinsic'}
+  height={300}
+  width={300}
+  />
+  </div>
+ </a>
 
-          <a href={"./video3"}>
-            <button className='vid-button'>CHAPTER 3</button>
-            <img src="chapt3.png" width="200" height="300"></img>
-          </a>
+<a href={"./video3"}>
+  <button className='vid-button'>CHAPTER 3</button>
+  < div className='thumbnails'>
+  <Image 
+  src={thumb3}
+  alt="chpt3"
+  layout={'intrinsic'}
+  height={300}
+  width={300}
+  />
+  </div>
+ </a>
 
-          <a href={"./video4"}>
-            <button className='vid-button'>CHAPTER 4</button>
-            <img src="chapt4.png" width="200" height="300"></img>
-          </a>
+<a href={"./video4"}>
+  <button className='vid-button'>CHAPTER 4</button>
+  < div className='thumbnails'>
+  <Image
+  src={thumb4}
+  alt="chpt4"
+  layout={'intrinsic'}
+  height={300}
+  width={300}
+  />
+  </div>
+  </a>
   
 
-          </section>
-          <section className="chpts-5-8">
-          <a href={"./video5"}>
-            <button className='vid-button'>CHAPTER 5</button>
-            <img src="chapt5.png" width="200" height="300"></img>
-          </a>
+</section>
+<section className="chpts-5-8">
 
-          <a href={"./video6"}>
-            <button className='vid-button'>CHAPTER 6</button>
-            <img src="chapt6.png" width="200" height="300"></img>
-          </a>
+<a href={"./video5"}>
+  <button className='vid-button'>CHAPTER 5</button>
+  < div className='thumbnails'>
+  <Image 
+  src={thumb5}
+  alt="chpt5"
+  layout={'intrinsic'}
+  height={300}
+  width={300}
+  />
+  </div>
+  </a>
 
-          <a href={"./video7"}>
-            <button className='vid-button'>CHAPTER 7</button>
-            <img src="chapt7.png" width="200" height="300"></img>
-          </a>
+<a href={"./video6"}>
+  <button className='vid-button'>CHAPTER 6</button>
+  < div className='thumbnails'>
+  <Image 
+  src={thumb6}
+  alt="chpt6"
+  layout={'intrinsic'}
+  height={300}
+  width={300}
+  />
+  </div>
+  </a>
+  
+<a href={"./video7"}>
+  <button className='vid-button'>CHAPTER 7</button>
+  < div className='thumbnails'>
+  <Image
+  src={thumb7}
+  alt="chpt7"
+  layout={'intrinsic'}
+  height={300}
+  width={300}
+  />
+  </div>
+  </a>
 
-          <a href={"./video8"}>
-            <button className='vid-button'>CHAPTER 8</button>
-            <img src="chapt8.png" width="200" height="300"></img>
-          </a>
+<a href={"./video8"}>
+  <button className='vid-button'>CHAPTER 8</button>
+  < div className='thumbnails'>
+  <Image 
+  src={thumb8}
+  alt="chpt8"
+  layout={'intrinsic'}
+  height={300}
+  width={300}
+  />
+  </div>
+  </a>
+          
     </section>   
     </div>
     </>
