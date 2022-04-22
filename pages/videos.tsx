@@ -1,5 +1,14 @@
 import Link from 'next/link'
-function videos(){
+const func = () => {
+  return (
+    <div >
+      you&apos;ve been
+    </div>
+  )
+}
+
+function videos() {
+  
   return(
     <>
     <div className='vid-bg'>
@@ -32,7 +41,7 @@ function videos(){
 
   Brenda: Those features are great and all, but what are some examples of companies that utilize python? 
 
-  Python: I am glad you asked. One widely known platform that you know is google, as you were using Google to do your research about python. Google uses python to provide better research results based on website rankings and much more, which is how Google is able to provide you with the valuable information needed to do your research. Another popular platform is Netflix, as I know you've been procrastinating watching Stranger Things instead of doing your homework. 
+  Python: I am glad you asked. One widely known platform that you know is google, as you were using Google to do your research about python. Google uses python to provide better research results based on website rankings and much more, which is how Google is able to provide you with the valuable information needed to do your research. Another popular platform is Netflix, as I know {func} procrastinating watching Stranger Things instead of doing your homework. 
 
   Brenda: haha so you know about that….
 
