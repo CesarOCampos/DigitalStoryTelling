@@ -2,7 +2,6 @@ import Link from 'next/link'
 function videos(){
     return(
         <>
-        
 
 <div className='vid-bg'>
     <div className='wrapper'>
