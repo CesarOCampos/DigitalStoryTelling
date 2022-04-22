@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Footer from '../components/footer'
 import { useRouter } from 'next/router'
 import React, { useState } from 'react'
 import { Button, Form } from 'react-bootstrap'
