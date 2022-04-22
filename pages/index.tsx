@@ -1,74 +1,96 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import Footer from './footer';
 import Link from 'next/link'
 import snake from '../public/media/image.png'
 
 const Home: NextPage = () => {
   return (
     <div>
-      <nav className="nav-background" id="top"> 
-        
-        <div className="nav-sections">
-          <Link href={"./login"}>
-            <a className="nav-spacing mr-4"><button className='navbar-buttons font-bold text-lg text-black'>Login</button></a>
-          </Link>
-          
-          <Link href={"./register"}>
-            <a className="nav-spacing mr-2"><button className='navbar-buttons font-bold text-lg text-black'>Register</button></a>
-          </Link>
-        </div>
-
-      </nav>
 
       <section className="homepage-background pb-10">
         
-        <div className='title-image-container'>
+        <div className='title-image-container pt-2'>
           <Image
             src={snake}
-            layout={"intrinsic"}
             alt="title Image"
+            layout={'intrinsic'}
+            height={600}
+            width={600}
           />
         </div>
 
-            <h2 className="homepage-intro-text title-layout"> Welcome!</h2>
-      <div className="title-layout"> Learn to Program with Python! </div>
-          <div className="homepage-intro-text">
-            <h2>Welcome!</h2> <br />
-            Start learning Python through watching videos and practicing code all in the browser!<br />
-            Just simply register your account, login and start watching videos. <br />
-            These are not regular tutorials, they teach you in a easy to understand and fun story-like way.</div>
-
-      <div className="button-layout">
-        {/* <a  className="button-style bg-[#2bd154ca] mr-2" href="videos"><button className="button-style">Register</button></a>
-        <a  className="button-style bg-[#4DA2F7] ml-2" href="videos"><button className="button-style">Login</button></a> */}
-  </div>
+          <h2 className="homepage-intro-text title-layout"> Welcome!</h2>
+      
+          <div className="title-layout"> Learn to Program with Python! </div>
+          
+          
+            <div className="homepage-intro-text">Start learning Python through watching videos and practicing code all in the browser!</div>
+            <div className="homepage-intro-text mt-3">Just simply register your account, login and start watching videos. </div>
+            <div className="homepage-intro-text mt-3">These are not regular tutorials, they teach you in a easy to understand and fun story-like way.</div>
+          
   </section>
 
-  <section className="bg-[#fc9255f6] pb-20">
+  <section className="bg-[#fc9255f6] pb-10">
       <div className="title-layout">Programming Resources</div>
-      <div className="text-layout">Programming Tools to get you started</div>
+      <div className="text-layout text-style">Programming Tools to get you started</div>
       
       <div className="button-layout pb-6">
-          <a  className="button-style bg-[#59CD90] m-2 " href="https://www.python.org/"><button className="button-style">Python</button></a>
+          <a className='mb-4' href="https://www.python.org/"><button className="buttons bg-[#59CD90]">Python</button></a>
       </div>
 
       <div className="button-layout">
-          <a  className="button-style bg-[#E62FFA] m-2" href="https://www.sublimetext.com/"><button className="button-style">Sublime text</button></a>
-          <a  className="button-style bg-[#72D8FD] m-2" href="https://code.visualstudio.com/"><button className="button-style">VS Code</button></a>
-          <a  className="button-style bg-[#F6BB80] m-2" href="https://www.jetbrains.com/pycharm/"><button className="button-style">Pycharm</button></a>
-          <a  className="button-style bg-[#FAFAAC] m-2" href="https://developer.apple.com/xcode/"><button className="button-style">XCode- For Mac</button></a>
+          <a className='ml-10' href="https://www.sublimetext.com/"><button className="buttons bg-[#E62FFA]">Sublime text</button></a>
+          <a className='ml-10' href="https://code.visualstudio.com/"><button className="buttons bg-[#72D8FD]">VS Code</button></a>
+          <a className='ml-10' href="https://www.jetbrains.com/pycharm/"><button className="buttons bg-[#F6BB80]">Pycharm</button></a>
+          <a className='ml-10' href="https://developer.apple.com/xcode/"><button className="buttons bg-[#FAFAAC]">XCode- For Mac</button></a>
       </div>
     </section>
 
-    <section className="homepage-background">
+    <section className="homepage-background pb-10">
         <div className="title-layout" id="About">About</div>
 
+        <div className='text-center pb-8 text-style'>UH students who worked on the website:</div>
+
+      <div className='about-section-center'>
+        
+          <div className='about-section'> 
+
+            <a>Ashley Odstrcil</a>
+            <a>Loveleen Thomas</a>
+            <a>Hussein Alfartosy</a>
+            <a>Tarun Appannagari</a>
+
+          </div>
+
+          <div className='about-section'> 
+
+            <a>Juanita Correa</a>
+            <a>Sonny Ha</a>
+            <a>Lena Luc</a>
+            <a>Annabella Tao</a>
+
+          </div>
+
+          <div className='about-section'> 
+
+            <a>Hima Vadakekara</a>
+            <a>Rozhin Zayen</a>
+            <a>Santos Garcia</a>
+            <a>Cesar Campos</a>
+
+          </div>
+
+          <div className='about-section'> 
+
+            <a>Brianna McDermot</a>
+          </div>
+
+        </div>
 
     </section>
 
-        <Footer></Footer>
+
 
     </div>
   )
