@@ -21,7 +21,7 @@ return(
 
     <section className="chpts-1-4">
       
-    <a href={"./videos"}>
+    <a href={"./chapters/1"}>
     <button className='vid-button'>CHAPTER 1</button> 
     < div className='thumbnails'>
     <Image 
@@ -34,7 +34,7 @@ return(
   </div>
   </a>
 
-<a href={"./video2"}>
+<a href={"./chapters/2"}>
   <button className='vid-button'>CHAPTER 2</button>
   < div className='thumbnails'>
   <Image
@@ -47,7 +47,7 @@ return(
   </div>
  </a>
 
-<a href={"./video3"}>
+<a href={"./chapters/3"}>
   <button className='vid-button'>CHAPTER 3</button>
   < div className='thumbnails'>
   <Image 
@@ -60,7 +60,7 @@ return(
   </div>
  </a>
 
-<a href={"./video4"}>
+<a href={"./chapters/4"}>
   <button className='vid-button'>CHAPTER 4</button>
   < div className='thumbnails'>
   <Image
@@ -77,7 +77,7 @@ return(
 </section>
 <section className="chpts-5-8">
 
-<a href={"./video5"}>
+<a href={"./chapters/5"}>
   <button className='vid-button'>CHAPTER 5</button>
   < div className='thumbnails'>
   <Image 
@@ -90,7 +90,7 @@ return(
   </div>
   </a>
 
-<a href={"./video6"}>
+<a href={"../chapters/6"}>
   <button className='vid-button'>CHAPTER 6</button>
   < div className='thumbnails'>
   <Image 
@@ -103,7 +103,7 @@ return(
   </div>
   </a>
   
-<a href={"./video7"}>
+<a href={"./chapters/7"}>
   <button className='vid-button'>CHAPTER 7</button>
   < div className='thumbnails'>
   <Image
@@ -116,7 +116,7 @@ return(
   </div>
   </a>
 
-<a href={"./video8"}>
+<a href={"../chapters/8"}>
   <button className='vid-button'>CHAPTER 8</button>
   < div className='thumbnails'>
   <Image 
