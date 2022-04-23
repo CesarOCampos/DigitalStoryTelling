@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import * as fs from 'fs'
 
-fs.readFileSync('../public/scripts/video1.txt','utf-8')
+
+
 function videos(){
     return(
         <>
