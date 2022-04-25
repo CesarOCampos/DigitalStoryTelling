@@ -75,7 +75,7 @@ return(
   
 
 </section>
-<section className="chpts-5-8">
+<section className="chpts-5-8 pb-10">
 
 <a href={"./chapters/5"}>
   <a className='m-'><button className='vid-button'>Chapter 5</button></a>
