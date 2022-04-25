@@ -17,13 +17,13 @@ return(
     
     <div className = "Header"><h4>Please choose a Chapter</h4></div>
     
-    <div className="vid-layout">
+    <div className="vid-layout page-container">
 
     <section className="chpts-1-4">
       
-    <a href={"./videos"}>
-    <button className='vid-button'>CHAPTER 1</button> 
-    <div className='thumbnails'>
+    <a href={"./chapters/1"}>
+    <button className='vid-button'>Chapter 1</button> 
+    < div className='thumbnails'>
     <Image 
       src={thumb1}
       alt="intro"
@@ -34,101 +34,101 @@ return(
       </div>
       </a>
 
-    <a href={"./video2"}>
-      <button className='vid-button'>CHAPTER 2</button>
-      < div className='thumbnails'>
-      <Image
-      src={thumb2}
-      alt="chpt2"
-      layout={'intrinsic'}
-      height={300}
-      width={300}
-      />
-      </div>
-    </a>
+<a href={"./chapters/2"}>
+  <button className='vid-button'>Chapter 2</button>
+  < div className='thumbnails'>
+  <Image
+  src={thumb2}
+  alt="chpt2"
+  layout={'intrinsic'}
+  height={300}
+  width={300}
+  />
+  </div>
+ </a>
 
-    <a href={"./video3"}>
-      <button className='vid-button'>CHAPTER 3</button>
-      < div className='thumbnails'>
-      <Image 
-      src={thumb3}
-      alt="chpt3"
-      layout={'intrinsic'}
-      height={300}
-      width={300}
-      />
-      </div>
-    </a>
+<a href={"./chapters/3"}>
+  <button className='vid-button'>Chapter 3</button>
+  < div className='thumbnails'>
+  <Image 
+  src={thumb3}
+  alt="chpt3"
+  layout={'intrinsic'}
+  height={300}
+  width={300}
+  />
+  </div>
+ </a>
 
-    <a href={"./video4"}>
-      <button className='vid-button'>CHAPTER 4</button>
-      < div className='thumbnails'>
-      <Image
-      src={thumb4}
-      alt="chpt4"
-      layout={'intrinsic'}
-      height={300}
-      width={300}
-      />
-      </div>
-    </a>
-      
+<a href={"./chapters/4"}>
+  <button className='vid-button'>Chapter 4</button>
+  < div className='thumbnails'>
+  <Image
+  src={thumb4}
+  alt="chpt4"
+  layout={'intrinsic'}
+  height={300}
+  width={300}
+  />
+  </div>
+  </a>
+  
 
     </section>
     <section className="chpts-5-8">
 
-    <a href={"./video5"}>
-      <button className='vid-button'>CHAPTER 5</button>
-      < div className='thumbnails'>
-      <Image 
-      src={thumb5}
-      alt="chpt5"
-      layout={'intrinsic'}
-      height={300}
-      width={300}
-      />
-      </div>
-    </a>
+<a href={"./chapters/5"}>
+  <a className='m-'><button className='vid-button'>Chapter 5</button></a>
+  < div className='thumbnails'>
+  <Image 
+  src={thumb5}
+  alt="chpt5"
+  layout={'intrinsic'}
+  height={300}
+  width={300}
+  />
+  </div>
+  </a>
 
-    <a href={"./video6"}>
-      <button className='vid-button'>CHAPTER 6</button>
-      < div className='thumbnails'>
-      <Image 
-      src={thumb6}
-      alt="chpt6"
-      layout={'intrinsic'}
-      height={300}
-      width={300}
-      />
-      </div>
-      </a>
-      
-    <a href={"./video7"}>
-      <button className='vid-button'>CHAPTER 7</button>
-      < div className='thumbnails'>
-      <Image
-      src={thumb7}
-      alt="chpt7"
-      layout={'intrinsic'}
-      height={300}
-      width={300}
-      />
-      </div>
-      </a>
+<a href={"../chapters/6"}>
+  <button className='vid-button'>Chapter 6</button>
+  < div className='thumbnails'>
+  <Image 
+  src={thumb6}
+  alt="chpt6"
+  layout={'intrinsic'}
+  height={300}
+  width={300}
+  />
+  </div>
+  </a>
+  
+<a href={"./chapters/7"}>
+  <button className='vid-button'>Chapter 7</button>
+  < div className='thumbnails'>
+  <Image
+  src={thumb7}
+  alt="chpt7"
+  layout={'intrinsic'}
+  height={300}
+  width={300}
+  />
+  </div>
+  </a>
 
-    <a href={"./video8"}>
-      <button className='vid-button'>CHAPTER 8</button>
-      < div className='thumbnails'>
-      <Image 
-      src={thumb8}
-      alt="chpt8"
-      layout={'intrinsic'}
-      height={300}
-      width={300}
-      />
-      </div>
-      </a>
-              
+<a href={"../chapters/8"}>
+  <button className='vid-button'>Chapter 8</button>
+  < div className='thumbnails'>
+  <Image 
+  src={thumb8}
+  alt="chpt8"
+  layout={'intrinsic'}
+  height={300}
+  width={300}
+  />
+  </div>
+  </a>
+          
     </section>   
     </div>
     </>
