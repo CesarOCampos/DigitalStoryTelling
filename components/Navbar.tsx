@@ -13,7 +13,13 @@ const NavbarComp = () => {
       
           <Nav className="me-aut">
             {user ? (
+              
               <div className='nav-sections'>
+                <div className='justify-left nav-spacing'>
+                <Link href="/" passHref>
+                <a className="nav-spacing mr-6 "><button className='navbar-buttons font-bold text-lg text-black'>Home</button></a>
+                </Link>
+                </div>
                 <Link href="/dashboard" passHref>
                 <a className="nav-spacing mr-6"><button className='navbar-buttons font-bold text-lg text-black'>Dashboard</button></a>
                 </Link>
