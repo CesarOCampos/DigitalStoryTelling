@@ -1,8 +1,10 @@
 import Link from "next/link"
 import Footer from '../components/footer'
+import router, { useRouter } from 'next/router'
 import React, { useState } from 'react'
-import { Button, Form } from "react-bootstrap"
+import { Button, Form } from 'react-bootstrap'
 import { useAuth } from '../context/AuthContext'
+
 
 const Signup = () => {
   const { user, signup } = useAuth()
@@ -17,6 +19,7 @@ const Signup = () => {
 
     try {
       await signup(data.email, data.password)
+      router.push('/dashboard')
     } catch (err) {
       console.log(err)
     }
@@ -61,6 +64,7 @@ const Signup = () => {
               })
             }
             value={data.password}
+
           />
         </Form.Group>
         <button className="button-layout buttons mx-auto mt-2 mb-3 rounded-xl p-2 text-center button-style bg-[#1f56ec]" >
