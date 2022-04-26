@@ -17,16 +17,15 @@ const Signup = () => {
   const handleSignup = async (e: any) => {
     e.preventDefault()
 
-    try {
-      await signup(data.displayName, data.email, data.password)
-      // router.push('/dashboard')
-      router.push('/login')
-    } catch (err) {
-      console.log(err)
+      try {
+        await signup(data.displayName, data.email, data.password)
+        // router.push('/dashboard')
+        router.push('/login')
+      } catch (err) {
+        console.log(err)
+      }
+      console.log(data)
     }
-
-    console.log(data)
-  }
 
   return (
     
@@ -41,7 +40,7 @@ const Signup = () => {
               <Form.Label className="block"> Name </Form.Label>
                 <Form.Control className="text-center bg-slate-200"
             type="name"
-            placeholder="Enter your name"
+            placeholder="Enter your Name"
             required
             onChange={(e: any) =>
               setData({
@@ -56,7 +55,7 @@ const Signup = () => {
           <Form.Label className="block">Email address</Form.Label>
           <Form.Control className="text-center bg-slate-200"
             type="email"
-            placeholder="Enter email"
+            placeholder="Enter Email"
             required
             onChange={(e: any) =>
               setData({
@@ -72,7 +71,7 @@ const Signup = () => {
           <Form.Label className="block">Password</Form.Label>
           <Form.Control className="text-center bg-slate-200"
             type="password"
-            placeholder="Password"
+            placeholder="Enter Password"
             required
             onChange={(e: any) =>
               setData({
@@ -80,9 +79,9 @@ const Signup = () => {
                 password: e.target.value,
               })
             }
-            value={data.password}
-
-          />
+              value={data.password}
+            />
+              
         </Form.Group>
         <button className="button-layout buttons mx-auto mt-2 mb-3 rounded-xl p-2 text-center button-style bg-[#1f56ec]" >
         <Button className="font-bold" variant="primary" type="submit">
@@ -95,6 +94,5 @@ const Signup = () => {
     </div>
   )
 }
-
 
 export default Signup
