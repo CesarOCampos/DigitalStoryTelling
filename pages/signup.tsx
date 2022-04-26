@@ -5,11 +5,11 @@ import React, { useState } from 'react'
 import { Button, Form } from 'react-bootstrap'
 import { useAuth } from '../context/AuthContext'
 
-
 const Signup = () => {
   const { user, signup } = useAuth()
   console.log(user)
   const [data, setData] = useState({
+    displayName: '',
     email: '',
     password: '',
   })
@@ -18,8 +18,9 @@ const Signup = () => {
     e.preventDefault()
 
     try {
-      await signup(data.email, data.password)
-      router.push('/dashboard')
+      await signup(data.displayName, data.email, data.password)
+      // router.push('/dashboard')
+      router.push('/login')
     } catch (err) {
       console.log(err)
     }
@@ -34,7 +35,23 @@ const Signup = () => {
         
         <h1 className="title-text">Register</h1>
         <div className="block">
-      <Form onSubmit={handleSignup}>
+          <Form onSubmit={handleSignup}>
+            
+            <Form.Group>
+              <Form.Label className="block"> Name </Form.Label>
+                <Form.Control className="text-center bg-slate-200"
+            type="name"
+            placeholder="Enter your name"
+            required
+            onChange={(e: any) =>
+              setData({
+                ...data,
+                displayName: e.target.value,
+              })
+            }
+            value={data.displayName}
+          />
+            </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label className="block">Email address</Form.Label>
           <Form.Control className="text-center bg-slate-200"

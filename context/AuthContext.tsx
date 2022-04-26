@@ -6,6 +6,7 @@ import {
   signOut,
 } from 'firebase/auth'
 import { auth } from '../config/firebase'
+import { getDisplayName } from 'next/dist/shared/lib/utils'
 
 const AuthContext = createContext<any>({})
 
@@ -24,10 +25,11 @@ export const AuthContextProvider = ({
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser({
-          uid: user.uid,
-          email: user.email,
-          displayName: user.displayName,
+          uid: user.uid, //user password
+          email: user.email, // user email
+          displayName: user.displayName, //user name/displayname`
         })
+        console.log(user.displayName)
       } else {
         setUser(null)
       }
@@ -37,11 +39,11 @@ export const AuthContextProvider = ({
     return () => unsubscribe()
   }, [])
 
-  const signup = (email: string, password: string) => {
+  const signup = (displayName: string, email: string, password: string) => {
     return createUserWithEmailAndPassword(auth, email, password)
   }
 
-  const login = (email: string, password: string) => {
+  const login = (displayName: string, email: string, password: string) => {
     return signInWithEmailAndPassword(auth, email, password)
   }
 
