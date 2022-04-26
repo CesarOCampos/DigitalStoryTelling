@@ -12,7 +12,7 @@ import thumb8 from '../public/media/chpt8.png'
 function Dashboard(){
 return(
     <>
-
+    
     <div className="video-lessons">Welcome to your story log</div>
     
     <div className = "Header"><h4>Please choose a Chapter</h4></div>
@@ -25,14 +25,14 @@ return(
     <button className='vid-button'>Chapter 1</button> 
     < div className='thumbnails'>
     <Image 
-      src={thumb1}
-      alt="intro"
-      layout={'intrinsic'}
-      height={300}
-      width={300}
-      />
-      </div>
-      </a>
+     src={thumb1}
+     alt="intro"
+     layout={'intrinsic'}
+     height={300}
+     width={300}
+  />
+  </div>
+  </a>
 
 <a href={"./chapters/2"}>
   <button className='vid-button'>Chapter 2</button>
@@ -74,8 +74,8 @@ return(
   </a>
   
 
-    </section>
-    <section className="chpts-5-8">
+</section>
+<section className="chpts-5-8 pb-10">
 
 <a href={"./chapters/5"}>
   <a className='m-'><button className='vid-button'>Chapter 5</button></a>
@@ -132,7 +132,7 @@ return(
     </section>   
     </div>
     </>
-  )
+)
 }
 
 export default Dashboard
