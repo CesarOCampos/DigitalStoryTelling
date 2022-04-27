@@ -30,8 +30,10 @@ export const AuthContextProvider = ({
           displayName: getDisplayName, //user name/displayname`
         })
       } else {
-        setUser(null)
+        // setUser(null)
+        setUser("Invalid user");
       }
+      const errorMessage = " Failed to login";
       setLoading(false)
     })
 
@@ -43,7 +45,13 @@ export const AuthContextProvider = ({
   }
 
   const login = (displayName: string, email: string, password: string) => {
+
     return signInWithEmailAndPassword(auth, email, password)
+    // try (f){
+    // } catch (err) {
+    //   const errorMessage = " Failed to login xD"
+    // }
+
   }
 
   const logout = async () => {

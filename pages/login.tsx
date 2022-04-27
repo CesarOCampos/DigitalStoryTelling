@@ -8,33 +8,21 @@ import { useAuth } from '../context/AuthContext'
 const Login = () => {
     const router = useRouter()
     const { user, login } = useAuth()
-  const [data, setData] = useState({
-      displayName: '',
-      email: '',
-      password: '',
-  })
-  
+    const [data, setData] = useState({
+        displayName: '',
+        email: '',
+        password: '',
+    })
   
   const handleLogin = async (e: any) => {
     e.preventDefault()
-    
-    // console.log(user)
-      const incorrectLogin = () => {
-        if ((data.email && data.password == null) || (data.email && data.password !== user)) {
-          //return "Invalid login"
-          return "Incorrect Login, Please try Again. Verify your Email and Password match."
-        }
-        handleLogin
-      }
-
+  
       try {
         await login(data.displayName, data.email, data.password)
-        // if(data.email === user.email && data.password === user.uid)
           router.push('/dashboard')
       } catch (err) {
-        //console.log(err)
-        return `Incorrect Login, Please try Again. Verify your Email and Password match.`
-        //console.log("Incorrect Login, Please try Again. Verify your Email and Password match.")
+        console.log(err)
+        alert("Incorrect Login, Please try Again. Verify your Email and Password match.")
       }
     }
   
@@ -72,6 +60,7 @@ const Login = () => {
               }
               value={data.password}
               required
+              minLength={6}
               type="password"
               placeholder="Password"
             />

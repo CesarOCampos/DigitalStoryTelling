@@ -22,9 +22,8 @@ const Signup = () => {
         router.push('/login')
       } catch (err) {
         console.log(err)
-        return "Unable to signup"
+        alert(err);
       }
-      //console.log(data)
     }
 
   return (
@@ -56,7 +55,7 @@ const Signup = () => {
           <Form.Control className="text-center bg-slate-200"
             type="email"
             placeholder="Enter Email"
-            required
+            required 
             onChange={(e: any) =>
               setData({
                 ...data,
@@ -72,8 +71,9 @@ const Signup = () => {
           <Form.Control className="text-center bg-slate-200"
             type="password"
             placeholder="Enter Password"
-            required
-            onChange={(e: any) =>
+              required
+              minLength={6}
+              onChange={(e: any) =>
               setData({
                 ...data,
                 password: e.target.value,
