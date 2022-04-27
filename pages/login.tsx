@@ -1,3 +1,4 @@
+import { UUID } from 'bson'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useState } from 'react'
@@ -7,7 +8,8 @@ import { useAuth } from '../context/AuthContext'
 const Login = () => {
     const router = useRouter()
     const { user, login } = useAuth()
-    const [data, setData] = useState({
+  const [data, setData] = useState({
+      displayName: '',
       email: '',
       password: '',
     })
@@ -17,10 +19,12 @@ const Login = () => {
   
       console.log(user)
       try {
-        await login(data.email, data.password)
-        router.push('/dashboard')
+        await login(data.displayName, data.email, data.password)
+        // if(data.email === user.email && data.password === user.uid)
+          router.push('/dashboard')
       } catch (err) {
         console.log(err)
+        return "Incorrect Login, Please try Again. Verify your Email and Password match."
       }
     }
   
