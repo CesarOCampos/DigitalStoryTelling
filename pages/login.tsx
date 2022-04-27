@@ -1,3 +1,4 @@
+import { UUID } from 'bson'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useState } from 'react'
@@ -8,19 +9,20 @@ const Login = () => {
     const router = useRouter()
     const { user, login } = useAuth()
     const [data, setData] = useState({
-      email: '',
-      password: '',
+        displayName: '',
+        email: '',
+        password: '',
     })
   
-    const handleLogin = async (e: any) => {
-      e.preventDefault()
+  const handleLogin = async (e: any) => {
+    e.preventDefault()
   
-      console.log(user)
       try {
-        await login(data.email, data.password)
-        router.push('/dashboard')
+        await login(data.displayName, data.email, data.password)
+          router.push('/dashboard')
       } catch (err) {
         console.log(err)
+        alert("Incorrect Login, Please try Again. Verify your Email and Password match.")
       }
     }
   
@@ -58,6 +60,7 @@ const Login = () => {
               }
               value={data.password}
               required
+              minLength={6}
               type="password"
               placeholder="Password"
             />
@@ -76,35 +79,3 @@ const Login = () => {
   }
   
   export default Login
-/* <div>
-
-    <div className="page-color page-container">
-
-    <form className="info-container ">
-        <div className="title-text">Login</div>
-
-        <div className="block">
-
-                <div className="block">
-                    <label className="block">Username</label>
-                    <input className="input" type="text" placeholder="Enter Username" required></input>
-                </div>
-
-                <div className="block">
-                    <label className="block pt-10">Password</label>
-                    <input className="input" type="password" placeholder="Enter Password" required></input>
-                </div>
-
-                <button className="button-layout button-style bg-[#1f56ec] m-3" >
-                <Link href="/dashboard">login</Link>
-                </button>
-
-        </div>
-
-        <div><a>Create an account <a className="text underline" href="register">here</a></a></div>
-        </form>
-        </div>
-
-        <Footer></Footer>
-</div> */
-
