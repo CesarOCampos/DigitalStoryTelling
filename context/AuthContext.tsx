@@ -27,9 +27,8 @@ export const AuthContextProvider = ({
         setUser({
           uid: user.uid, //user password
           email: user.email, // user email
-          displayName: user.displayName, //user name/displayname`
+          displayName: getDisplayName, //user name/displayname`
         })
-        console.log(user.displayName)
       } else {
         setUser(null)
       }

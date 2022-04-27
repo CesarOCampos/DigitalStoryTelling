@@ -7,7 +7,7 @@ import { useAuth } from '../context/AuthContext'
 
 const Signup = () => {
   const { user, signup } = useAuth()
-  console.log(user)
+  //console.log(user)
   const [data, setData] = useState({
     displayName: '',
     email: '',
@@ -19,12 +19,12 @@ const Signup = () => {
 
       try {
         await signup(data.displayName, data.email, data.password)
-        // router.push('/dashboard')
         router.push('/login')
       } catch (err) {
         console.log(err)
+        return "Unable to signup"
       }
-      console.log(data)
+      //console.log(data)
     }
 
   return (

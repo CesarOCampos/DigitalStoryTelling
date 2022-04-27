@@ -15,6 +15,7 @@ function Dashboard(){
 return(
     <>
     <div> {getDisplayName} ! </div>
+    {console.log(getDisplayName)}
     <div className="video-lessons">Welcome to your story log</div>
     
     <div className = "Header"><h4>Please choose a Chapter</h4></div>
