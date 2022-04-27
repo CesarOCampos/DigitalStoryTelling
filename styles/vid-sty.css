@@ -1,20 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
 .vid-bg{
-    background-color: rgba(221, 197, 212, 0.837);
+    background-image:url("../public/media/videopg-backg.jpg");
+    background-size:contain;
+    background-blend-mode:darken;
+    background-position-y: top;
     box-shadow: inset 0 -0px 6px 3px rgba(0, 0, 0, 0.503)
 }
 .wrapper{
 font-size: 50px;
 font-family: "Grape Nuts";
 font-weight: bold;
-color:rgba(29, 170, 170, 0.822);
+color:rgba(51, 254, 254, 0.822);
 font-size-adjust: inherit;
 }
 
 .size-wrapper iframe{
     position:relative;
     border-width: 15px;
-    border-color: rgba(241, 175, 87, 0.8);
+    border-color: rgba(167, 16, 175, 0.831);
     height: 450px;
     width: 750px;
 }
@@ -24,7 +27,7 @@ font-size-adjust: inherit;
     margin-top: 1.5cm;
     margin-left: 2cm;
     border-width: 15px;
-    border-color: rgba(241, 175, 87, 0.8);
+    border-color: rgba(250, 247, 242, 0.958);
     height: 450px;
     width: 650px;
 }
@@ -34,11 +37,14 @@ font-size-adjust: inherit;
     font-weight: bolder;
     font-style:inherit;
     font-size: 40px;
-    color: rgb(62, 199, 163);
+    color: rgba(51, 254, 254, 0.822);
 }
 
 .instructs{
     font-weight: 500;
-    color: rgba(153, 114, 47, 0.734);
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    font-size: larger;
+    font-weight: bolder;
     margin-top: 10px;
 }
