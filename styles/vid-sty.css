@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
 .vid-bg{
-    background-image:url("../public/media/videopg-backg.jpg");
+    background-image:("../public/media/videopg-backg.jpg");
     background-size:contain;
     background-blend-mode:darken;
     background-position-y: top;
