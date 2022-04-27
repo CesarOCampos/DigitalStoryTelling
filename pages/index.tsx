@@ -15,8 +15,8 @@ const Home: NextPage = () => {
             src={snake}
             alt="title Image"
             layout={'intrinsic'}
-            height={600}
-            width={600}
+            height={350}
+            width={550}
           />
         </div>
 
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
           
   </section>
 
-  <section className="bg-[#fc9255f6] pb-10">
+  <section className="bg-[#fb2c08c7] pb-10">
       <div className="title-layout">Programming Resources</div>
       <div className="text-layout text-style">Programming Tools to get you started</div>
       
