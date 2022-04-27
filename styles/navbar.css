@@ -25,7 +25,7 @@
 
 .homepage-background{
   /* background-color: #71eb96ca;*/
-  background-image:url("../public/media/back-G.png");
+  background-image:url('/media/back-G.png');
   background-size: cover;
   box-shadow: inset 0 -0px 6px 3px rgba(0, 0, 0, 0.503)
 }

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
 .vid-layout{
-    background-image: url("../public/media/dashback.png");
+    background-image: url('/media/dashback.png');
     background-size: contain;
     padding-bottom: 5cm;
 }

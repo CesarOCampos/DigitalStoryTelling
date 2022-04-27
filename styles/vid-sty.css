@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
 .vid-bg{
-    background-image:url("../public/media/videopg-backg.jpg");
+    background-image:url('/media/videopg-backg.jpg');
     background-size:contain;
     background-blend-mode:darken;
     background-position-y: top;
     box-shadow: inset 0 -0px 6px 3px rgba(0, 0, 0, 0.503)
 }
+
 .wrapper{
 font-size: 50px;
 font-family: "Grape Nuts";
