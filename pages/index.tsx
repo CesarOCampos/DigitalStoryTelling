@@ -24,7 +24,6 @@ const Home: NextPage = () => {
       
           <div className="title-layout"> Learn to Program with Python! </div>
           
-          
             <div className="homepage-intro-text">Start learning Python through watching videos and practicing code all in the browser!</div>
             <div className="homepage-intro-text mt-3">Just simply register your account, login and start watching videos. </div>
             <div className="homepage-intro-text mt-3">These are not regular tutorials, they teach you in a easy to understand and fun story-like way.</div>
@@ -89,8 +88,6 @@ const Home: NextPage = () => {
         </div>
 
     </section>
-
-
 
     </div>
   )

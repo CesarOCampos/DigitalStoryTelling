@@ -4,6 +4,7 @@ import router, { useRouter } from 'next/router'
 import React, { useState } from 'react'
 import { Button, Form } from 'react-bootstrap'
 import { useAuth } from '../context/AuthContext'
+//import { getDisplayName } from "next/dist/shared/lib/utils"
 
 const Signup = () => {
   const { user, signup } = useAuth()
