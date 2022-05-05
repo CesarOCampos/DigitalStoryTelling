@@ -38,11 +38,11 @@ const Home: NextPage = () => {
           <a className='mb-4' href="https://www.python.org/"><button className="buttons bg-[#59CD90]">Python</button></a>
       </div>
 
-      <div className="button-layout">
-          <a className='ml-10' href="https://www.sublimetext.com/"><button className="buttons bg-[#E62FFA]">Sublime text</button></a>
-          <a className='ml-10' href="https://code.visualstudio.com/"><button className="buttons bg-[#72D8FD]">VS Code</button></a>
-          <a className='ml-10' href="https://www.jetbrains.com/pycharm/"><button className="buttons bg-[#F6BB80]">Pycharm</button></a>
-          <a className='ml-10' href="https://developer.apple.com/xcode/"><button className="buttons bg-[#FAFAAC]">XCode- For Mac</button></a>
+      <div className="button-layout2">
+          <a className='' href="https://www.sublimetext.com/"><button className="buttons bg-[#E62FFA]">Sublime text</button></a>
+          <a className='' href="https://code.visualstudio.com/"><button className="buttons bg-[#72D8FD]">VS Code</button></a>
+          <a className='' href="https://www.jetbrains.com/pycharm/"><button className="buttons bg-[#F6BB80]">Pycharm</button></a>
+          <a className='' href="https://developer.apple.com/xcode/"><button className="buttons bg-[#FAFAAC]">XCode- For Mac</button></a>
       </div>
     </section>
 
@@ -50,32 +50,31 @@ const Home: NextPage = () => {
         <div className="title-layout" id="About">About</div>
 
         <div className='text-center pb-8 text-style'>UH students who worked on the website:</div>
-
+      
       <div className='about-section-center'>
-        
           <div className='about-section'> 
 
-            <a>Ashley Odstrcil</a>
-            <a>Loveleen Thomas</a>
-            <a>Hussein Alfartosy</a>
+            <a className='pb-3'>Ashley Odstrcil</a>
+            <a className='pb-3'>Loveleen Thomas</a>
+            <a className='pb-3'>Hussein Alfartosy</a>
             <a>Tarun Appannagari</a>
 
           </div>
 
           <div className='about-section'> 
 
-            <a>Juanita Correa</a>
-            <a>Sonny Ha</a>
-            <a>Lena Luc</a>
+            <a className='pb-3'>Juanita Correa</a>
+            <a className='pb-3'>Sonny Ha</a>
+            <a className='pb-3'>Lena Luc</a>
             <a>Annabella Tao</a>
 
           </div>
 
           <div className='about-section'> 
 
-            <a>Hima Vadakekara</a>
-            <a>Rozhin Zayen</a>
-            <a>Santos Garcia</a>
+            <a className='pb-3'>Hima Vadakekara</a>
+            <a className='pb-3'>Rozhin Zayen</a>
+            <a className='pb-3'>Santos Garcia</a>
             <a>Cesar Campos</a>
 
           </div>
@@ -84,7 +83,6 @@ const Home: NextPage = () => {
 
             <a>Brianna McDermot</a>
           </div>
-
         </div>
 
     </section>
